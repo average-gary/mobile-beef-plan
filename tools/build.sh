@@ -27,15 +27,18 @@ printf -- '- [$title$]($cat$/$slug$.html) — $summary$\n' > "$meta"
   printf -- '---\ntitle: Research\n---\n\n# Research wiki\n\n'
   printf 'Compiled articles behind the [business plan](../plan/) ([PDF](../plan/%s)). ' "$(basename "$PLAN.pdf")"
   printf 'Raw sources are on [GitHub](%s).\n\n' "$GH"
-  for cat in topics concepts references theses; do
+  for cat in topics options concepts references theses; do
     files=(.wiki/wiki/$cat/[!_]*.md)
     [ -e "${files[0]}" ] || continue
     mkdir -p "_site/wiki/$cat"
     printf '## %s\n\n' "$(tr '[:lower:]' '[:upper:]' <<<"${cat:0:1}")${cat:1}"
+    [ "$cat" = options ] && printf 'Business models explored for the service, one page each; compared on the [Business Model Options](topics/business-model-options.html) hub. The plan, PDF and pro forma model Option B.\n\n'
     for f in "${files[@]}"; do
       slug=$(basename "$f" .md)
-      render "$f" -M root=../../ -M nav-wiki=1 -o "_site/wiki/$cat/$slug.html"
-      pandoc "$f" -t markdown --template "$meta" -V cat="$cat" -V slug="$slug"
+      nav=nav-wiki=1
+      [ "$cat" = options ] || [ "$slug" = business-model-options ] && nav=nav-options=1
+      render "$f" -M root=../../ -M "$nav" -o "_site/wiki/$cat/$slug.html"
+      pandoc "$f" -t markdown --wrap=none --template "$meta" -V cat="$cat" -V slug="$slug"
     done
     echo
   done

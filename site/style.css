@@ -92,6 +92,13 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 }
 .placeholder-badge { background: var(--amber-bg); color: var(--amber); border: 1px solid #e3c67f; }
 .sourced-badge { background: var(--olive-light); color: var(--olive-dark); border: 1px solid #b9c49a; }
+.option-badge {
+  display: inline-block; padding: 0 .45em; border-radius: 999px; font-size: .75rem;
+  font-weight: 600; line-height: 1.6; vertical-align: middle; white-space: nowrap; border: 1px solid var(--border);
+}
+.option-badge.chosen { background: var(--olive-light); color: var(--olive-dark); border-color: #b9c49a; }
+.option-badge.candidate { background: var(--amber-bg); color: var(--amber); border-color: #e3c67f; }
+.option-badge.superseded { color: var(--muted); text-decoration: line-through; }
 
 /* Layout */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
