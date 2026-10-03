@@ -95,7 +95,7 @@ before interest, or about $44/head at 300 head/yr and about $26/head at 500.
 
 ## Kill-and-cut units (round 3)
 
-If the unit also cuts and packages (the user's chosen model), the options are Sentinel's **53 ft semi from $300,000** with an 18 ft butcher room, or **Mobile Processing Trailers & Supply turnkey goosenecks (38–44 ft, quote only)**. The 2020 VAFAIRS review put mobile-unit start-up "under $250,000" ([Matson](../../raw/papers/2026-10-02-r3-vastudy-matson-vafairs-small-volume-red-meat-2020.md)). See [[cooler-backed-mobile-model|Cooler-Backed Mobile Model]] ([Cooler-Backed Mobile Model](../topics/cooler-backed-mobile-model.md)).
+If the unit also cuts and packages (the chosen model), the options are Sentinel's **53 ft semi from $300,000** with an 18 ft butcher room, or **Mobile Processing Trailers & Supply turnkey goosenecks (38–44 ft, quote only)**. The 2020 VAFAIRS review put mobile-unit start-up "under $250,000" ([Matson](../../raw/papers/2026-10-02-r3-vastudy-matson-vafairs-small-volume-red-meat-2020.md)). See [[cooler-backed-mobile-model|Cooler-Backed Mobile Model]] ([Cooler-Backed Mobile Model](../topics/cooler-backed-mobile-model.md)).
 
 ## Insurance
 

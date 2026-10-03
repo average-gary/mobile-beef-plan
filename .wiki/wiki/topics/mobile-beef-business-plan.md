@@ -19,20 +19,24 @@ sources:
   - raw/articles/2026-10-02-r2-lending-farm-credit-virginias-processing-eligibility.md
   - raw/papers/2026-10-02-econ-rusted-gate-msu-business-plan-2022.md
   - raw/data/2026-10-02-mkt-nass-2022-county-cattle-shenandoah-valley.md
+  - raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 tags: [business-plan, synthesis, custom-exempt, mobile-cut-and-pack, hanging-cooler, shenandoah-valley, go-no-go, diligence]
 aliases: ["the plan", "synthesis"]
 confidence: medium
 volatility: warm
-summary: "Synthesis after three rounds (71 sources), built on the user's model: a custom-exempt mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned hanging and aging cooler. Legal under a free VDACS Custom Permit. Two people cap it near 6-10 head/week (cutting is about 8 man-hours per custom beef), roughly 300-400 head/yr at about $800-1,100/head. Biggest risks: the cooler site becomes a meat-processing use (a conditional use permit in Frederick County RA) and needs a wastewater route (public sewer is best); blood and wash water on farms are DEQ 'industrial wastes'; the kill-and-cut unit is $300k+ (Sentinel 53 ft) or quote-only. Finance with Farm Credit plus VSBFA; AFID Infrastructure fits the cooler."
+summary: "Synthesis of rounds 1-3 (71 sources) plus the round-4 zoning correction, built on the chosen model: a custom-exempt mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned hanging and aging cooler. Legal under a free VDACS Custom Permit. Two people cap it near 6-10 head/week (cutting is about 8 man-hours per custom beef), roughly 300-400 head/yr at about $800-1,100/head. Biggest risks: the cooler site becomes a meat-processing use (a conditional use permit in Frederick County RA, by right only in the M2 industrial district) and needs a wastewater route (public sewer is best); blood and wash water on farms are DEQ 'industrial wastes'; the kill-and-cut unit is $300k+ (Sentinel 53 ft) or quote-only. Finance with Farm Credit plus VSBFA; AFID Infrastructure fits the cooler."
 ---
 
 # Mobile Beef Processing Business Plan
 
-> **Status.** Synthesis of three research rounds (71 sources), built on **the user's chosen model**.
+> **Status.** Synthesis of research rounds 1-3 (71 sources), with the round-4 zoning correction, built on **the chosen model**.
 > It is a decision frame and diligence list, **not a costed pro forma**. The next step is real
 > quotes and a zoning determination.
+
+> **This is Option B.** Alternatives explored (kill-only, storage-only cooler, rental, rental plus
+> education) are compared in [[business-model-options|Business Model Options]] ([Business Model Options](business-model-options.md)).
 
 ## The model
 
@@ -63,7 +67,10 @@ labor, inside the business.**
      and has no cold-storage use there. A service cooler fails the by-right "more than half produced on the farm" test.
    - Docking to cut there almost certainly triggers the CUP: 100 ft setbacks, a 20,000 sq ft cap, everything under
      roof, and screening.
-   - Alternative: a commercially or industrially zoned parcel with **public sewer**.
+   - Off the farm, the use is by right **only in M2** (Industrial General). B2 commercial land does **not** allow it, and no
+     business or industrial district offers it as a conditional use (round 4, Article VI use lists). M2 likely brings
+     **public sewer** but loses the farm-building exemption.
+   - A storage-only cooler ("Warehousing and Storage", by right in B3) is possible only if cutting moves elsewhere: see Option C.
    - See [[cooler-site-permits|Cooler Site Permits]] ([Cooler Site Permits](../concepts/cooler-site-permits.md)).
 2. **Wastewater, on farms and at the dock.**
    - Blood and wash water are DEQ "industrial wastes", and there is no small-processor general permit.
@@ -73,7 +80,7 @@ labor, inside the business.**
 3. **Capex for a kill-and-cut unit.**
    - Sentinel's 53 ft semi lists **from $300k**. Mobile Processing Trailers & Supply turnkey goosenecks are quote-only.
    - A 53 ft semi is awkward on farm lanes and needs a Class A CDL.
-   - Option noted, not recommended over the user's choice: since cutting only happens at the dock, a cheap
+   - Option noted, not recommended over the chosen model: since cutting only happens at the dock, a cheap
      kill-only trailer ($72k–$115k) plus a separate cut-room trailer parked at the cooler is a cost alternative worth quoting.
    - See [[custom-exempt-mobile-rig|Custom-Exempt Mobile Rig]] ([Custom-Exempt Mobile Rig](../concepts/custom-exempt-mobile-rig.md)).
 
@@ -118,7 +125,7 @@ See [[valley-processor-landscape|Valley Processor Landscape]] ([Valley Processor
 
 | # | Who | Ask |
 |---|---|---|
-| 1 | **Frederick County Zoning Administrator** (then Shenandoah, Clarke, Page) | Written use determination for a cooler where a mobile cut unit docks; CUP timeline and cost |
+| 1 | **Frederick County Zoning Administrator** (then Shenandoah, Clarke, Page) | Written use determination for a cooler where a mobile cut unit docks (RA CUP vs M2); whether § 165-204.17 applies in M2; CUP timeline and cost |
 | 2 | **Frederick Water / FWSA** | Sewer at candidate parcels; discharge limits; high-strength surcharge |
 | 3 | **DEQ Valley Regional Office** | D.4 covers offal composted on the farm of kill? Does the agricultural exclusion cover a mobile operator's wash water? |
 | 4 | **VDACS OMPS** (804-786-4569) | Custom Permit for a kill-and-cut mobile unit plus cooler; site inspection or checklist; current Valley custom-permit holders (competitors) |
@@ -149,7 +156,7 @@ See [[valley-processor-landscape|Valley Processor Landscape]] ([Valley Processor
 
 ## Biggest remaining unknowns
 
-1. Zoning outcome and site cost: CUP vs a commercial parcel with sewer.
+1. Zoning outcome and site cost: RA CUP vs an M2 parcel with sewer.
 2. Real quotes for the kill-and-cut unit and the cooler.
 3. DEQ's position on blood and wash water at farm kills.
 4. Local producers' willingness to pay, and existing Valley mobile competitors (the VDACS roster).
@@ -158,6 +165,7 @@ See [[valley-processor-landscape|Valley Processor Landscape]] ([Valley Processor
 ## See Also
 
 - [[cooler-backed-mobile-model|Cooler-Backed Mobile Model]] ([Cooler-Backed Mobile Model](cooler-backed-mobile-model.md))
+- [[business-model-options|Business Model Options]] ([Business Model Options](business-model-options.md))
 - [[cooler-site-permits|Cooler Site Permits]] ([Cooler Site Permits](../concepts/cooler-site-permits.md))
 - [[grant-and-financing-opportunities|Grant and Financing Opportunities]] ([Grant and Financing Opportunities](grant-and-financing-opportunities.md))
 - [[custom-exempt-mobile-rig|Custom-Exempt Mobile Rig]] ([Custom-Exempt Mobile Rig](../concepts/custom-exempt-mobile-rig.md))

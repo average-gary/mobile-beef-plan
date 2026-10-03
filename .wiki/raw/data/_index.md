@@ -2,7 +2,7 @@
 
 > Raw data sources for mobile-beef-processing.
 
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## Contents
 
@@ -25,9 +25,15 @@ Last updated: 2026-10-02
 | [2026-10-02-r3-ins-wyoming-msu-2004-insurance-lines.md](2026-10-02-r3-ins-wyoming-msu-2004-insurance-lines.md) | A 2004 FSMIP-funded feasibility study (Sheridan College, Wyoming Rural Development Council, and others, with Bruce Dunlop of Lopez Island as a contributor). It models a USDA-inspected mobile slaughter unit feeding a fixed cut-and-wrap facility, which is the… | insurance, commercial-auto, mobile-slaughter-unit, cut-and-wrap, operating-budget, feasibility-study | 2026-10-02 |
 | [2026-10-02-r3-water-frederick-water-sewer-specs-fees.md](2026-10-02-r3-water-frederick-water-sewer-specs-fees.md) | The Frederick County Sanitation Authority now operates as Frederick Water; fcsa-water.com no longer resolves, and the live site is frederickwater.com, which returns 403 to curl, so pages were read through the Wayback Machine. Its Standards and Specifications… | frederick-county, frederick-water, fcsa, sewer, grease-interceptor, pretreatment | 2026-10-02 |
 | [2026-10-02-risk-nmpan-2011-msu-proforma-assumptions.md](2026-10-02-risk-nmpan-2011-msu-proforma-assumptions.md) | NMPAN's 2011 guide (pp. 27-35) gives a sample MSU pro forma 'based on a real MSU' in California. Start-up is $235,310 (unit $200,000, used tractor $26,000), excluding the cut-and-wrap facility. It shows profit from year 1: $191,506 in 2011 sales and $36,385… | mobile-slaughter-unit, msu, pro-forma, utilization, butcher-labor, offal-disposal | 2026-10-02 |
+| [2026-10-03-r4-education-farmstead-meatsmith-harvest-class-prices.md](2026-10-03-r4-education-farmstead-meatsmith-harvest-class-prices.md) | Farmstead Meatsmith (Brandon Sheard, outside Tulsa OK; formerly in Washington) is a national benchmark for paid, hands-on, on-farm slaughter-and-butchery classes taught on the school's own animals. 2026 prices: Family Pig I, 3 days, $1,530 per hands-on… | education, butchery-class, on-farm-slaughter, hands-on, pricing, hog | 2026-10-03 |
+| [2026-10-03-r4-education-nmpan-consulting-and-online-courses.md](2026-10-03-r4-education-nmpan-consulting-and-online-courses.md) | NMPAN (Oregon State University) offers free 30-minute calls with ~14 named meat-processing consultants and up to 10 hours of free grant-funded Peer 2 Peer consulting (up to 20 projects in 2025). Its online courses set a public price anchor: Western Meat… | education, consulting, nmpan, aamp, online-course, pricing | 2026-10-03 |
+| [2026-10-03-r4-rental-nc-extension-mppu-fee-sheets.md](2026-10-03-r4-rental-nc-extension-mppu-fee-sheets.md) | Three NC Cooperative Extension county centers publish MPU rental terms (pages updated Jun-Sep 2026). Stokes charges $75 for up to 4 days; Orange/Durham $50 per 3-day or $75 per 5-day (card only); Rowan $25/day with a 3-day minimum ($75), cash/check, and… | equipment-rental, mppu, poultry, extension, rental-fees, north-carolina | 2026-10-03 |
+| [2026-10-03-r4-rentins-insureon-consultant-premiums.md](2026-10-03-r4-rentins-insureon-consultant-premiums.md) | Insureon (an online broker; page modified 2026-06-30) reports median premiums for consulting businesses that bought policies through it. General liability: $32/mo, with annual range ~$250 to >$1,400; typical policy $1M per occurrence / $2M aggregate,… | insurance-premiums, professional-liability, errors-and-omissions, general-liability, consulting, education-consulting | 2026-10-03 |
+| [2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md](2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md) | Frederick County's business and industrial districts classify uses by NAICS, and the Zoning Administrator decides the classification. 'Animal Slaughtering and Processing' is allowed by right only in M2 (Industrial General): 'Food Manufacturing including… | zoning, frederick-county, article-vi, b2, b3, tm | 2026-10-03 |
 
 ## Recent Changes
 
+- 2026-10-03: Research round 4 ingested 5 source(s) (zoning, rental, storage, rental insurance, participation boundary, education).
 - 2026-10-02: Research round 3 ingested 7 source(s).
 - 2026-10-02: Research round 2 ingested 5 source(s).
 - 2026-10-02: Research round 1 ingested 5 source(s).

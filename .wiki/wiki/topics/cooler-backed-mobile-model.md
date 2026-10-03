@@ -15,21 +15,25 @@ sources:
   - raw/data/2026-10-02-r2-rig-sentinel-slaughter-trailer-prices.md
   - raw/data/2026-10-02-r2-capacity-valley-processor-prices.md
   - raw/articles/2026-10-02-reg-vdacs-red-meat-custom-exemptions.md
+  - raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 tags: [operating-model, mobile-cut-and-pack, hanging-cooler, dry-aging, throughput, cutter-labor, cooler-sizing, revenue-model, custom-exempt]
 aliases: ["the operating model", "cooler + mobile", "kill-and-cut mobile"]
 confidence: medium
 volatility: warm
-summary: "The user's chosen model: a mobile unit kills on the owner's farm AND later cuts and packages; a fixed cooler only hangs and ages carcasses for 7-21 days. It removes the dependency on a partner cut shop that sank other MSUs. The cost is that cutting labor becomes the binding constraint (about 8 man-hours per custom beef, 4.5 standardized), so two cutters cap the business near 6-10 head a week. A cooler for 20-30 hanging beef needs about 300-500 sq ft. Kill-and-cut mobile units list from $300k (Sentinel 53 ft). The legal catch: once the unit docks at the cooler to cut, Frederick County treats the site as a slaughterhouse/processing use (conditional use permit in RA), and it needs a wastewater route."
+summary: "The chosen model: a mobile unit kills on the owner's farm AND later cuts and packages; a fixed cooler only hangs and ages carcasses for 7-21 days. It removes the dependency on a partner cut shop that sank other MSUs. The cost is that cutting labor becomes the binding constraint (about 8 man-hours per custom beef, 4.5 standardized), so two cutters cap the business near 6-10 head a week. A cooler for 20-30 hanging beef needs about 300-500 sq ft. Kill-and-cut mobile units list from $300k (Sentinel 53 ft). The legal catch: once the unit docks at the cooler to cut, Frederick County treats the site as a slaughterhouse/processing use (conditional use permit in RA; by right only in the M2 industrial district, not B2 commercial), and it needs a wastewater route."
 ---
 
 # Cooler-Backed Mobile Model
 
-> **The model, as the user specified it.** The mobile unit **slaughters and also cuts and packages**.
+> **The model, as specified.** The mobile unit **slaughters and also cuts and packages**.
 > The fixed site is **a hanging and aging cooler only**. Rounds 1–2 assumed a partner cut shop.
-> This article replaces that assumption and works out what the user's model implies.
+> This article replaces that assumption and works out what that model implies.
 > All numbers are sourced and dated, and every derived figure is marked [inferred].
+
+> **This is Option B.** Alternatives explored (kill-only, storage-only cooler, rental, rental plus
+> education) are compared in [[business-model-options|Business Model Options]] ([Business Model Options](business-model-options.md)).
 
 ## The flow
 
@@ -133,8 +137,11 @@ which needs **about 300–500 sq ft**, roughly two 12×20 ft walk-ins.
   - Frederick County bans pump-and-haul for RA restaurants, which is a warning sign for a holding tank.
   
   See [[slaughter-waste-disposal-virginia|Slaughter Waste Disposal in Virginia]] ([Slaughter Waste Disposal in Virginia](../concepts/slaughter-waste-disposal-virginia.md)).
-- **Siting implication** [inferred]: the cheapest legal site may be **commercially or industrially zoned land with
-  public sewer**, not a farm. Alternatively, accept the CUP and sewer-extension cost on an RA parcel. Get a
+- **Off-farm zoning (round 4).** Outside RA, "Animal Slaughtering and Processing" is by right **only in M2**
+  (Industrial General). B2 commercial, B3, M1 and TM do not allow it, and none offers it as a conditional use
+  ([Article VI](../../raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md)).
+- **Siting implication** [inferred]: the legal sites are an **M2 parcel** (likely with public sewer, but no farm-building
+  exemption and higher land cost) or an RA parcel with the CUP and a sewer or engineered-septic answer. Get a
   written use determination from the Zoning Administrator before buying land or equipment.
 
 ## Revenue per head: a sketch [inferred from dated benchmarks]
@@ -172,11 +179,13 @@ the next step**, and it needs real quotes.
 3. A Frederick County use determination for a cooler where a mobile cut unit docks.
 4. Sewer availability and cost at candidate sites; the FWSA/Winchester discharge limits.
 5. Rail and trolley pricing; used reefer conversion; humidity and airflow specs for aging.
-6. How customer pickup works at the cooler (hours, freezer holding). More than 25 people a day would trigger VDH waterworks rules.
+6. Whether § 165-204.17 (setbacks, under roof) also applies on an M2 parcel.
+7. How customer pickup works at the cooler (hours, freezer holding). More than 25 people a day would trigger VDH waterworks rules.
 
 ## See Also
 
 - [[mobile-beef-business-plan|Mobile Beef Processing Business Plan]] ([Mobile Beef Processing Business Plan](mobile-beef-business-plan.md))
+- [[business-model-options|Business Model Options]] ([Business Model Options](business-model-options.md))
 - [[cooler-site-permits|Cooler Site Permits]] ([Cooler Site Permits](../concepts/cooler-site-permits.md))
 - [[custom-exempt-mobile-rig|Custom-Exempt Mobile Rig]] ([Custom-Exempt Mobile Rig](../concepts/custom-exempt-mobile-rig.md))
 - [[slaughter-waste-disposal-virginia|Slaughter Waste Disposal in Virginia]] ([Slaughter Waste Disposal in Virginia](../concepts/slaughter-waste-disposal-virginia.md))

@@ -65,7 +65,7 @@ kill floor or in the cooler? **Round 2 evidence points to the cooler and the cut
 
 **4. Feed the ShenValley Meat Processing Cooperative** (round 2). GO Virginia Region 8 granted Page County $87,450 (2025) to plan a facility for exactly the **aging, storage, and fabrication** steps, partnering out "live receiving". A mobile kill unit is the missing upstream piece ([GO Virginia](../../raw/articles/2026-10-02-r2-stgrant-go-virginia-region8-and-nsvrc.md)). Timing and location (Page County) are outside the operator's control.
 
-## The user's model brings it in-house (round 3)
+## The chosen model brings it in-house (round 3)
 
 The chosen configuration owns the cooler and does the cutting on the mobile unit, docked at the cooler. That removes the partner dependency, but the binding resources (cooler rail and cutter hours) become the operator's own constraint. See [[cooler-backed-mobile-model|Cooler-Backed Mobile Model]] ([Cooler-Backed Mobile Model](../topics/cooler-backed-mobile-model.md)).
 

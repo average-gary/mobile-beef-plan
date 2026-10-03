@@ -14,6 +14,10 @@ legal, tax or financial advice. Every figure is dated to its source, and the fin
 are **illustrative**: they combine sourced benchmarks with clearly labelled placeholder assumptions
 that must be replaced with real quotes, a zoning determination and lender terms before the plan is
 used to raise money. Items marked *[inferred]* are this plan's reasoning, not a source's statement.
+
+**Correction (2026-10-03).** Earlier text said a commercially zoned parcel "may be simpler". Frederick
+County's use lists show the cooler with a cutting dock is by right only in M2 (Industrial General); B2
+does not allow it. See the wiki's Cooler Site Permits page.
 :::
 
 # 1. Executive Summary
@@ -54,14 +58,14 @@ to Virginia state inspection or USDA inspection later is possible but is a separ
 | **Cash left for owner pay and reserves** | **$17,799** | **$70,685** | **$129,507** |
 
 - **Capital required:** about **$470,000**, dominated by the mobile kill-and-cut unit (~$300,000 list).
-- **Break-even with a $50,000 owner draw:** about **275 head a year**, about 5–6 a week.
+- **Break-even with a $50,000 owner draw:** about **274 head a year**, about 5–6 a week.
 - **Capacity:** two people top out near **300–400 head a year**, because cutting takes about 8 labor-hours per custom beef.
 
 **The three things that decide go/no-go:**
 
 1. **Zoning for the cooler site.** In Frederick County's Rural Areas (RA) district, any place where meat is
-   "processed" is a *slaughterhouse* use, which needs a conditional use permit. A commercially zoned
-   parcel with public sewer may be simpler.
+   "processed" is a *slaughterhouse* use, which needs a conditional use permit. The by-right
+   alternative is an **M2 (Industrial General)** parcel; B2 commercial does not allow it (corrected 2026-10-03).
 2. **Wastewater.** Blood and wash water are regulated "industrial wastes". Blood capture plus public sewer at the cooler is
    the clean route.
 3. **Equipment cost and labor.** Real quotes for the mobile unit, and a second skilled cutter.
@@ -189,7 +193,7 @@ later allow limited in-state direct sales. **The plan assumes neither.**
 | Item | Agency | Status |
 |---|---|---|
 | Custom Permit, covering the mobile kill-and-cut unit and the cooler | VDACS Office of Meat & Poultry Services | Ask whether the site is inspected and what checklist applies |
-| Zoning use determination, then a conditional use permit or a site on a commercial parcel | Frederick County (or Shenandoah / Clarke / Page) | **Critical path** |
+| Zoning use determination, then an RA conditional use permit or an M2 (Industrial General) site; B2 does not allow it | Frederick County (or Shenandoah / Clarke / Page) | **Critical path** |
 | Building permit, or the farm-building exemption (Va. Code § 36-97/99, on a working farm only) | County building official | Ask |
 | Sewer connection and any pretreatment approval | Frederick Water / regional sewer authority; DEQ for pretreatment plans | Ask about discharge limits and surcharge |
 | Private well (if no public water): coliform test every 6 months | Self / VDH | Below waterworks thresholds |
@@ -214,7 +218,7 @@ would require:
 - **all operations under roof**, meaning a canopy or bay over the docked unit
 - screening, plus public hearings
 
-The alternative is a **commercially or industrially zoned parcel with public sewer**.
+The by-right alternative is an **M2 (Industrial General) parcel**, likely with public sewer: Frederick County allows "Animal Slaughtering and Processing" by right only in M2. B2 (General Business) does not allow it, and M1/TM expressly exclude it; B3 allows "Warehousing and Storage" only (Frederick County Code Ch. 165 Article VI, 2026; corrected 2026-10-03).
 
 # 5. Operations
 
@@ -334,7 +338,7 @@ item and is excluded from cash.
 
 - **Year 1 is thin.** At 200 head the business barely covers debt service and leaves almost nothing for the owner.
   Plan the first year as a ramp, with savings or off-season income.
-- **Viability comes in at roughly 275 head a year**, about 5–6 a week. That is inside the two-person ceiling but
+- **Viability comes in at roughly 274 head a year**, about 5–6 a week. That is inside the two-person ceiling but
   close to it.
 - **Price matters more than equipment.** Each $0.10/lb on cutting moves Year 3 cash by about $27,000, while dropping
   the unit cost by $108,000 moves it by about $13,000 a year.
@@ -359,7 +363,7 @@ item and is excluded from cash.
 
 | Risk | Likelihood / impact | Mitigation |
 |---|---|---|
-| Zoning denies or delays the cooler and dock | High / high | Get a written use determination first. Compare Shenandoah, Clarke and Page counties. Consider a commercial parcel with sewer |
+| Zoning denies or delays the cooler and dock | High / high | Get a written use determination first. Compare Shenandoah, Clarke and Page counties. Consider an M2 parcel with sewer (B2 does not allow it) |
 | Wastewater: no sewer, or DEQ objects to farm wash water | Medium / high | Capture blood and first rinse, carry an onboard holding tank, choose a sewered site, get DEQ's position in writing |
 | Can't hire or keep a second cutter | High / high | Owner cuts. Simplified cut menu. Seasonal cutter. RappCE pipeline. Pay above the $20/hr mean |
 | Volume below plan, or uneven across the year | Medium / high | Pre-sold harvest dates with deposits. Off-season pricing for winter-finished cattle. 100-mile service radius |

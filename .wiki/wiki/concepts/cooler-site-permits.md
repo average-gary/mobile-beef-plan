@@ -10,19 +10,22 @@ sources:
   - raw/articles/2026-10-02-r3-water-vdh-12vac5-610-613-onsite-sewage.md
   - raw/data/2026-10-02-r3-water-frederick-water-sewer-specs-fees.md
   - raw/articles/2026-10-02-r2-vareg-2vac5-210-meat-poultry-regs.md
+  - raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md
 created: 2026-10-02
-updated: 2026-10-02
-tags: [zoning, frederick-county, conditional-use-permit, slaughterhouse-use, building-code, farm-building-exemption, 9-cfr-416, waterworks, wastewater, sewer, cooler]
+updated: 2026-10-03
+tags: [zoning, frederick-county, m2-zoning, b3-zoning, conditional-use-permit, slaughterhouse-use, building-code, farm-building-exemption, 9-cfr-416, waterworks, wastewater, sewer, cooler]
 aliases: ["cooler zoning", "site permits", "CUP"]
 confidence: medium
 volatility: warm
-summary: "Permits for the fixed cooler, where a mobile unit docks to cut. Zoning is the main hurdle. Frederick County's RA district lists slaughterhouses (any place where animals 'dead or alive, are processed') only as a conditional use, has no cold-storage use, and lets agricultural storage stand by right only if the farm produced more than half of it. Building code may be exempt under the farm-building exemption (§ 36-97 lists processing of agricultural animal products), but that applies only on a farm and the building official decides. Water: a private well is fine, well below waterworks thresholds. Wastewater: cutting and wash-down water is industrial waste, and public sewer is the cleanest route."
+summary: "Permits for the fixed cooler, where a mobile unit docks to cut. Zoning is the main hurdle. Frederick County's RA district lists slaughterhouses (any place where animals 'dead or alive, are processed') only as a conditional use, has no cold-storage use, and lets agricultural storage stand by right only if the farm produced more than half of it. Off the farm, a cooler with a cutting dock ('Animal Slaughtering and Processing') is by right only in M2; B2 commercial does not allow it; a storage-only cooler is 'Warehousing and Storage', by right in B3. Building code may be exempt under the farm-building exemption (§ 36-97 lists processing of agricultural animal products), but that applies only on a farm and the building official decides. Water: a private well is fine, well below waterworks thresholds. Wastewater: cutting and wash-down water is industrial waste, and public sewer is the cleanest route."
 ---
 
 # Cooler Site Permits
 
 > **Bottom line [inferred].** A cooler that only stores carcasses might pass as a farm use. A cooler where
-> a mobile unit **docks to cut** is a meat-processing site: a CUP in RA plus a wastewater solution.
+> a mobile unit **docks to cut** is a meat-processing site: a CUP in RA, or by right **only in M2** (Industrial General),
+> plus a wastewater solution. **Correction (2026-10-03):** earlier text said a commercial parcel "may be simpler";
+> Frederick County's B2 commercial district does not allow it at all.
 > Get a written **use determination** from the Frederick County Zoning Administrator (§ 165-101.06)
 > before buying land or equipment.
 
@@ -36,7 +39,7 @@ Read from Wayback snapshots dated 2026-07-11; the code's last amendment was 2026
 | Is a slaughterhouse allowed by right? | **No.** Conditional use **BB "Slaughterhouses"** (§ 165-401.03) |
 | What counts as a slaughterhouse? | "Establishments primarily engaged in the slaughtering **or processing** of meats for human consumption." § 165-204.17A reaches any establishment where animals "dead or alive, are processed" |
 | Can it be agricultural storage by right? | Only storage "in its unmanufactured state" **and** only if the farm "regularly produces more than 1/2 of the commodity so treated". A service cooler for other owners fails this |
-| Cold storage or warehouse? | **Not a listed RA use.** It would mean rezoning to a business or industrial district |
+| Cold storage or warehouse? | **Not a listed RA use.** "Warehousing and Storage" is by right only in B3 (see below) |
 | CUP conditions (§ 165-204.17) | Buildings, unloading and pens ≥ **100 ft** from property lines; total buildings ≤ **20,000 sq ft**; **all operations under roof**, screened from neighbours and roads; 14-gauge screens; extra buffering at the administrator's discretion |
 | Process | Planning Commission and Board of Supervisors public hearings, plus a site plan |
 | Wastewater hint | RA restaurants (CUP E) must have an approved drainfield, and "pump and hauls are prohibited" |
@@ -44,9 +47,32 @@ Read from Wayback snapshots dated 2026-07-11; the code's last amendment was 2026
 **Siting options** [inferred]:
 1. **RA parcel with a CUP.** Budget for the hearings, the setbacks, and a roofed dock bay so the trailer's cutting is
    "under roof".
-2. **Business- or industrially zoned parcel with public sewer.** This avoids the RA questions and solves wastewater.
-3. **Cooler on the operator's own farm, storing mostly the farm's own beef.** This fits by-right agriculture but defeats the
+2. **M2 (Industrial General) parcel, likely with public sewer.** By right for a cooler plus cutting dock, and sewer solves
+   dock wastewater. It loses the farm-building exemption (full commercial building permit) and costs more in land or lease.
+   B2 commercial land does **not** work (see below).
+3. **B3 parcel for a storage-only cooler** (no cutting on site), as in Option C or D of the
+   [[business-model-options|Business Model Options]] ([Business Model Options](../topics/business-model-options.md)).
+4. **Cooler on the operator's own farm, storing mostly the farm's own beef.** This fits by-right agriculture but defeats the
    service model.
+
+## Zoning: business and industrial districts (round 4)
+
+Article VI use lists, read from Wayback 2026 snapshots (allowed-use tables amended 7-10-2024). Uses are classified by
+NAICS and the Zoning Administrator decides ([Article VI](../../raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md)).
+
+| District | Cooler + cutting dock ("Animal Slaughtering and Processing") | Storage-only cooler ("Warehousing and Storage") |
+|---|---|---|
+| B2 General Business | Not listed | Not listed |
+| B3 Industrial Transition | Not listed | **By right** |
+| TM Technology-Manufacturing | Expressly excluded from food manufacturing | Secondary use only (up to 50% of floor area), 10-acre minimum |
+| M1 Light Industrial | Expressly excluded from food manufacturing | Not listed by name: needs a Zoning Administrator classification; unconfirmed |
+| **M2 Industrial General** | **By right**: "Food Manufacturing including Animal Slaughtering and Processing" | Inherits M1's list (same gap) unless accessory to the processing use |
+
+- No business or industrial district offers either use as a **conditional** use; outside M2 the processing route is a rezoning.
+- Cutting carcasses maps to NAICS 311612 under 3116 [inferred mapping; the ordinance prints no codes].
+- § 165-204.17 (100 ft setbacks, under roof, screening) is worded to reach "any ... establishment where animals ... are processed"
+  without naming a district, so it **may apply in M2 too**: unverified.
+- Trailer rental is by right in B3 and M1; "Technical and Trade Schools" or "Vocational Schools" by right in B2, B3, TM and M1.
 
 **Not checked:** how Shenandoah and Clarke counties zone this. Siting outside Frederick County may be easier.
 
@@ -92,7 +118,7 @@ Volume and strength are covered in [[slaughter-waste-disposal-virginia|Slaughter
 
 ## Calls
 
-1. **Frederick County Zoning Administrator:** use determination for a cooler where a mobile cut unit docks. Also get a CUP timeline and cost.
+1. **Frederick County Zoning Administrator:** use determination for a cooler where a mobile cut unit docks (RA CUP vs M2); whether § 165-204.17 applies in M2; whether a storage-only carcass cooler is "Warehousing and Storage" (B3). Also get a CUP timeline and cost.
 2. **Frederick Water / FWSA:** sewer availability at candidate parcels, discharge limits, and any high-strength surcharge.
 3. **Frederick County building official:** would a cooler on a working farm get the § 36-97 exemption?
 4. **VDACS OMPS:** does the Custom Permit cover the docked cut room and the cooler, and is there a site inspection?
@@ -103,3 +129,4 @@ Volume and strength are covered in [[slaughter-waste-disposal-virginia|Slaughter
 - [[cooler-backed-mobile-model|Cooler-Backed Mobile Model]] ([Cooler-Backed Mobile Model](../topics/cooler-backed-mobile-model.md))
 - [[slaughter-waste-disposal-virginia|Slaughter Waste Disposal in Virginia]] ([Slaughter Waste Disposal in Virginia](slaughter-waste-disposal-virginia.md))
 - [[regulatory-models-compared|Regulatory Models Compared]] ([Regulatory Models Compared](regulatory-models-compared.md))
+- [[business-model-options|Business Model Options]] ([Business Model Options](../topics/business-model-options.md))
