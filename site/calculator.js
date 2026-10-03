@@ -1,8 +1,10 @@
-import { flatten, projection, breakEvenHead, sensitivity } from './proforma.js';
+import { flatten, projection, breakEvenHead, sensitivity, tierMix, tierRevenue, laborCheck } from './proforma.js';
 
 const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 const int = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const CUTS = [0.90, 1.00, 1.10, 1.25];
+const OWNER_HOURS = 2500;   // laborCheck default: owner works unpaid
+let FORM_ERROR;
 const $ = (id) => document.getElementById(id);
 
 function el(tag, props = {}, ...kids) {
@@ -113,12 +115,19 @@ const LINES = [
 function render() {
   const read = readInputs();
   $('form-error').hidden = !!read;
+  $('form-error').textContent = FORM_ERROR;
   if (!read) return;   // keep last good results on screen
 
   const hash = read.changed.toString();
   history.replaceState(null, '', hash ? '#' + hash : location.pathname + location.search);
 
   const a = scenario(read.values);
+  let mix;
+  try { mix = tierMix(a); } catch (e) {
+    $('form-error').hidden = false;
+    $('form-error').textContent = e.message + '. Adjust the three tier shares under "Service tiers & add-ons". Results below are from the last valid scenario.';
+    return;
+  }
   const years = projection(a);
   const last = years[years.length - 1];
   $('kpis').replaceChildren(
@@ -132,11 +141,37 @@ function render() {
     LINES.map(([label, k, fmt = usd]) => [label, ...years.map((y) => fmt.format(y[k]))]));
   table($('sensitivity'), ['Cutting price ($/lb hanging)', `Year ${years.length} cash for owner`, 'Break-even head with owner draw'],
     sensitivity(a, CUTS).map((s) => ['$' + s.cutPerLb.toFixed(2), usd.format(s.year3Cash), beText(s.breakEvenWithOwner)]));
+
+  const rev = tierRevenue(a), pct = (x) => Math.round(x * 100) + '%';
+  table($('tiers'), ['Tier', 'Share of head', 'Revenue per head', 'Staff hours per head'], [
+    ['Full service', pct(mix.full), usd.format(rev.full), String(a.staffHoursFullPerHead)],
+    ['Coached', pct(mix.coached), usd.format(rev.coached), String(a.staffHoursCoachedPerHead)],
+    ['Rent', pct(mix.rental), usd.format(rev.rental), String(a.staffHoursRentalPerHead)],
+    ['Mix-weighted', pct(mix.full + mix.coached + mix.rental), usd.format(last.revenuePerHead), ''],
+  ]);
+  const labor = a.years.map((y) => laborCheck(a, y.head, y.employeeHours, OWNER_HOURS));
+  table($('labor'), ['', ...years.map((_, i) => 'Year ' + (i + 1))], [
+    ['Staff hours needed', ...labor.map((l) => int.format(l.hoursNeeded))],
+    [`Hours available (employee + ${int.format(OWNER_HOURS)} owner)`, ...labor.map((l) => int.format(l.hoursAvailable))],
+    ['Utilization', ...labor.map((l) => pct(l.utilization))],
+  ]);
+  const over = labor.map((l, i) => l.utilization > 1 ? 'Year ' + (i + 1) : null).filter(Boolean);
+  $('labor-warning').hidden = !over.length;
+  $('labor-warning').textContent = over.length ? `Labor over 100% in ${over.join(', ')}: the tier mix needs more staff hours than are available. Add employee hours or shift head toward Coached or Rent.` : '';
 }
 
 function loadHash() {
   const params = new URLSearchParams(location.hash.slice(1));
-  for (const input of inputs) input.value = params.has(input.dataset.key) ? params.get(input.dataset.key) : String(defaults[input.dataset.key]);
+  for (const input of inputs) {
+    const k = input.dataset.key, raw = params.get(k), v = Number(raw);
+    const ok = raw != null && raw.trim() !== '' && Number.isFinite(v) &&
+      (input.min === '' || v >= +input.min) && (input.max === '' || v <= +input.max);
+    input.value = ok ? raw : String(defaults[k]);   // ignore bad hash values so first render always draws
+  }
+  // A partial or bad tier mix in a shared link falls back to the default mix.
+  const tier = ['tierMixFull', 'tierMixCoached', 'tierMixRental'].map((k) => inputs.find((i) => i.dataset.key === k));
+  if (tier.every(Boolean) && Math.abs(tier.reduce((s, i) => s + Number(i.value), 0) - 1) > 0.001)
+    for (const i of tier) i.value = String(defaults[i.dataset.key]);
 }
 
 async function main() {
@@ -148,6 +183,7 @@ async function main() {
     $('groups').replaceChildren(el('p', { className: 'error', textContent: 'Could not load assumptions.json: ' + e.message }));
     return;
   }
+  FORM_ERROR = $('form-error').textContent;
   buildForm(groupsJson);
   loadHash();
   render();

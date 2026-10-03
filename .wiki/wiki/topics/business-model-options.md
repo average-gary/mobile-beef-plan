@@ -11,13 +11,14 @@ sources:
   - raw/data/2026-10-03-r4-education-farmstead-meatsmith-harvest-class-prices.md
   - raw/data/2026-10-02-r2-rig-sentinel-slaughter-trailer-prices.md
   - raw/articles/2026-10-02-r2-capacity-pec-fuller-processor-study-2021.md
+  - raw/data/2026-10-03-r5-tiers-gores-meats-frederick-shenandoah-price-tiers.md
 created: 2026-10-03
 updated: 2026-10-03
-tags: [business-model, options, comparison-matrix, decision-log, zoning, custom-exempt, rental, education]
+tags: [business-model, price-tiers, options, comparison-matrix, decision-log, zoning, custom-exempt, rental, education]
 aliases: ["options hub", "options"]
 confidence: medium
 volatility: warm
-summary: "Hub comparing every business model explored. A: kill-only rig + partner cut shop (superseded). B: kill on farm, hang in a company cooler, cut at the cooler dock (chosen; the business plan, PDF and calculator). C: storage-only cooler, cut back on the farm (candidate). D: rent the unit to owners + cold storage (candidate). E: D plus education and advice for renters (candidate, new). The matrix covers who does the work, legal basis, Frederick County zoning, waste, capacity, capex, revenue, risk and status, and the page sets out how to add an option."
+summary: "Hub comparing every business model explored. A: kill-only rig + partner cut shop (superseded). B: kill on farm, hang in a company cooler, cut at the cooler dock (chosen; the business plan, PDF and calculator). C: storage-only cooler, cut back on the farm (candidate). D: rent the unit to owners + cold storage (candidate). E: D plus education and advice for renters (candidate). F: D, E and B combined as price tiers with add-ons (candidate, new). The matrix covers who does the work, legal basis, Frederick County zoning, waste, capacity, capex, revenue, risk and status, and the page sets out how to add an option."
 ---
 
 # Business Model Options
@@ -31,18 +32,18 @@ summary: "Hub comparing every business model explored. A: kill-only rig + partne
 
 ## Comparison matrix
 
-| | [A. Kill-only + partner cut shop](../options/option-a-kill-only-partner-cut-shop.md) | [B. Cooler-dock kill-and-cut](../options/option-b-cooler-dock-kill-and-cut.md) | [C. Storage cooler, cut on farm](../options/option-c-cooler-storage-cut-on-farm.md) | [D. Rental + storage](../options/option-d-rental-plus-storage.md) | [E. Rental + education](../options/option-e-rental-plus-education.md) |
-|---|---|---|---|---|---|
-| **Who does the work** | Company kills; partner shop cuts | Company kills and cuts | Company kills and cuts | Owner (renter) kills and cuts | Owner kills and cuts; company teaches and advises |
-| **Legal basis** | VDACS Custom Permit (free) | Custom Permit; "mobile slaughter and processing unit" allowed | Custom Permit; split stages OK if "Not for Sale" (Note 13) | Personal use, 9 CFR 303.1(a)(1); company must not "participate" | Personal use for renters; company stays at advise-only, or holds a Custom Permit as safe harbor |
-| **Cooler zoning (Frederick Co.)** | No cooler | Cutting dock = "Animal Slaughtering and Processing": **M2 by right**, RA CUP; not B2/B3/M1/TM | Storage only: **B3 by right**; M1 unconfirmed | Storage + trailer rental: **B3** best fit; semi rental classification uncertain | As D; classroom = trade school by right (B2, B3, TM, M1) |
-| **Farm-side zoning** | Open: is a farm kill a "slaughterhouse" use in RA? | Same open question | Sharper: kill **and** cut on farms | Fits the RA "farmers ... for their own family use" exception if owner-raised | As D; paid classes on RA farms not checked |
-| **Waste** | Offal D.4 on farm; capture blood | Farm: offal D.4, blood captured; dock: sewer best | Cutting wash water on every farm: holding tank + hauler | Renter's farm (D.4 fits cleanly); company cleans unit | As D; course teaches blood capture |
-| **Capacity limit** | Partner cut-shop slots | Cutting labor: about 6-10 head/week, 2 people | About 5-7 head/week [inferred] (setup and travel per farm) | Rental days and units; no cutter ceiling | Instructor time (about 8 students/class) |
-| **Capex** | $72k-$115k rig (2026) | $471,576 illustrative (Sentinel 53 ft from $300k) | About B's [inferred] + holding tank | Unit + storage cooler; semi needs CDL, towables lack cut room | D's, or near zero for education-only start |
-| **Revenue model** | Kill fee + mileage + daily minimum | About $800-1,100/head (kill + cut and pack) | As B, more mileage | Rental day + storage [placeholder: about $400/day, $50/head] | D + certification, workshops ($675-775/student, 2026), coaching (about $150/hr, MPA's implied value of bundled coaching, 2025 [inferred]) |
-| **Biggest risk** | Feeds the bottleneck; partner unit idled 2 yr (Central Coast) | M2 site cost or RA CUP; cutting labor | Throughput at break-even (about 5.3/week, 274/52 [inferred]) | Market mismatch; no red-meat DIY rental precedent; waivers void (Hiett) | Undefined "participates" line; unpriced workshop insurance |
-| **Status** | Superseded | **Chosen** | Candidate | Candidate | Candidate (new) |
+| | [A. Kill-only + partner cut shop](../options/option-a-kill-only-partner-cut-shop.md) | [B. Cooler-dock kill-and-cut](../options/option-b-cooler-dock-kill-and-cut.md) | [C. Storage cooler, cut on farm](../options/option-c-cooler-storage-cut-on-farm.md) | [D. Rental + storage](../options/option-d-rental-plus-storage.md) | [E. Rental + education](../options/option-e-rental-plus-education.md) | [F. Tiered offering](../options/option-f-tiered-offering.md) |
+|---|---|---|---|---|---|---|
+| **Who does the work** | Company kills; partner shop cuts | Company kills and cuts | Company kills and cuts | Owner (renter) kills and cuts | Owner kills and cuts; company teaches and advises | Per tier: T1/T2 owner (T2 staff advise only); T3 company |
+| **Legal basis** | VDACS Custom Permit (free) | Custom Permit; "mobile slaughter and processing unit" allowed | Custom Permit; split stages OK if "Not for Sale" (Note 13) | Personal use, 9 CFR 303.1(a)(1); company must not "participate" | Personal use for renters; company stays at advise-only, or holds a Custom Permit as safe harbor | A tier is a legal configuration: T1/T2 personal use (or owner's own Custom Permit); T3 company Custom Permit; staff hands-on work flips a job to T3 |
+| **Cooler zoning (Frederick Co.)** | No cooler | Cutting dock = "Animal Slaughtering and Processing": **M2 by right**, RA CUP; not B2/B3/M1/TM | Storage only: **B3 by right**; M1 unconfirmed | Storage + trailer rental: **B3** best fit; semi rental classification uncertain | As D; classroom = trade school by right (B2, B3, TM, M1) | Inherits the site: M2 allows all tiers; at a B3 storage cooler no tier may cut on site (T3 becomes Option C) |
+| **Farm-side zoning** | Open: is a farm kill a "slaughterhouse" use in RA? | Same open question | Sharper: kill **and** cut on farms | Fits the RA "farmers ... for their own family use" exception if owner-raised | As D; paid classes on RA farms not checked | T1/T2 as D; T3 as B |
+| **Waste** | Offal D.4 on farm; capture blood | Farm: offal D.4, blood captured; dock: sewer best | Cutting wash water on every farm: holding tank + hauler | Renter's farm (D.4 fits cleanly); company cleans unit | As D; course teaches blood capture | T1 as D; T2 as D, company haul-off optional; T3 as B |
+| **Capacity limit** | Partner cut-shop slots | Cutting labor: about 6-10 head/week, 2 people | About 5-7 head/week [inferred] (setup and travel per farm) | Rental days and units; no cutter ceiling | Instructor time (about 8 students/class) | Cutters for T3; unit calendar for T1/T2 (1 rental day/head [placeholder]) [inferred] |
+| **Capex** | $72k-$115k rig (2026) | $471,576 illustrative (Sentinel 53 ft from $300k) | About B's [inferred] + holding tank | Unit + storage cooler; semi needs CDL, towables lack cut room | D's, or near zero for education-only start | B's (same unit + cooler) |
+| **Revenue model** | Kill fee + mileage + daily minimum | About $800-1,100/head (kill + cut and pack) | As B, more mileage | Rental day + storage [placeholder: about $400/day, $50/head] | D + certification, workshops ($675-775/student, 2026), coaching (about $150/hr, MPA's implied value of bundled coaching, 2025 [inferred]) | T3 $930, T2 $825, T1 $450/head [mostly placeholder] + a la carte add-ons (Gore's 2026, Backyard Butchery 2025 structure) |
+| **Biggest risk** | Feeds the bottleneck; partner unit idled 2 yr (Central Coast) | M2 site cost or RA CUP; cutting labor | Throughput at break-even (about 5.3/week, 274/52 [inferred]) | Market mismatch; no red-meat DIY rental precedent; waivers void (Hiett) | Undefined "participates" line; unpriced workshop insurance | At default staffing, DIY share raises break-even (311 head at 50/30/20); storage of personal-use carcasses and coaching need VDACS answers |
+| **Status** | Superseded | **Chosen** | Candidate | Candidate | Candidate | Candidate (new) |
 
 Sources for each cell are on the option pages. Zoning: [Article VI use lists](../../raw/data/2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md), [RA](../../raw/articles/2026-10-02-r3-coolreg-frederick-county-zoning-ra.md).
 
@@ -53,9 +54,10 @@ Sources for each cell are on the option pages. Zoning: [Article VI use lists](..
 - [[option-c-cooler-storage-cut-on-farm|Option C: Storage-Only Cooler, Cut Back on the Farm]] ([Option C: Storage-Only Cooler, Cut Back on the Farm](../options/option-c-cooler-storage-cut-on-farm.md)): **candidate**. Fallback if M2 sites fail.
 - [[option-d-rental-plus-storage|Option D: Rental Plus Storage]] ([Option D: Rental Plus Storage](../options/option-d-rental-plus-storage.md)): **candidate**. Best as an add-on tier, not standalone.
 - [[option-e-rental-plus-education|Option E: Rental Plus Education]] ([Option E: Rental Plus Education](../options/option-e-rental-plus-education.md)): **candidate**. Cheapest demand test; gated on written VDACS answers about "participates".
+- [[option-f-tiered-offering|Option F: Tiered Offering]] ([Option F: Tiered Offering](../options/option-f-tiered-offering.md)): **candidate** (round 5). Combines D, E and B as price tiers (Rent, Coached, Full service) plus add-ons on one unit and cooler; modelled in the calculator's tier mix. Hypothesis: B as the core, DIY tiers capped at about 20-30% of head.
 
-Options can combine. The live combination [inferred]: B as the core ("we do it"), with D and E as an off-season
-"you do it" tier, all under one free Custom Permit.
+Options can combine. Option F works out that combination [inferred]: B as the core ("we do it"), with D and E as an off-season
+"you do it" tier, all under one free Custom Permit. The pro forma calculator models the tier mix.
 
 ## How to add an option
 

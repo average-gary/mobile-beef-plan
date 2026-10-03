@@ -1,11 +1,40 @@
-// Illustrative pro forma. Must match tools/reference/proforma.py.
+// Illustrative pro forma. With the default Full-service-only tier mix it must match tools/reference/proforma.py
+// (which has no tiers).
+
+// Shares of head by service tier. Rejected (throws) unless they are >= 0 and sum to 1 within 0.001; not normalized,
+// so a typo cannot silently rescale the other tiers.
+export function tierMix(a) {
+  const m = { full: a.tierMixFull, coached: a.tierMixCoached, rental: a.tierMixRental };
+  const sum = m.full + m.coached + m.rental;
+  if (!Object.values(m).every(v => v >= 0) || Math.abs(sum - 1) > 0.001) throw new RangeError(`Tier mix must sum to 1 (got ${+sum.toFixed(4)})`);
+  return m;
+}
+
+// Revenue per head for each tier. Full = Option B formula; Coached and Rental = rental fee (+ coaching) + cooler storage.
+export function tierRevenue(a) {
+  const storage = a.storageFeePerHeadWeek * a.storageWeeks;
+  return {
+    full: a.killFee + a.mileagePerHead + a.cutPerLb * a.hangingWeight + a.extrasPerHead,
+    coached: a.rentalFeePerHead + a.coachingFeePerHead + storage,
+    rental: a.rentalFeePerHead + storage,
+  };
+}
+
+// Staff hours the mix needs vs employee + owner hours available. Payroll still follows employeeHours; this is a check.
+export function laborCheck(a, head, employeeHours, ownerHours = 2500) {
+  const m = tierMix(a);
+  const hoursNeeded = head * (m.full * a.staffHoursFullPerHead + m.coached * a.staffHoursCoachedPerHead + m.rental * a.staffHoursRentalPerHead);
+  const hoursAvailable = employeeHours + ownerHours;
+  return { hoursNeeded, hoursAvailable, utilization: hoursNeeded / hoursAvailable };
+}
 
 export function computeYear(a, head, employeeHours) {
-  const revenuePerHead = a.killFee + a.mileagePerHead + a.cutPerLb * a.hangingWeight + a.extrasPerHead;
+  const m = tierMix(a), t = tierRevenue(a);
+  const revenuePerHead = m.full * t.full + m.coached * t.coached + m.rental * t.rental;
   const revenue = head * revenuePerHead;
   const payroll = employeeHours * a.wage * (1 + a.payrollBurden);
-  const packaging = a.packagingPerHead * head;
-  const rendering = a.renderingPerHead * head;
+  const packaging = a.packagingPerHead * head * m.full;                                      // Full only: company cuts and packs
+  const rendering = a.renderingPerHead * head * (m.full + m.coached * a.renderingCoached);  // Rental: offal stays on renter's farm
   const fuel = a.fuelPerKillDay * head / a.headPerKillDay;
   const utilities = a.coolerUtilities + a.sewerBase + a.sewerGalPerHead * head * a.sewerPer1000Gal / 1000;
   const insurance = a.insuranceRevenueShare * revenue + (a.wcRatePer100 / 100) * payroll;

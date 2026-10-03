@@ -30,9 +30,11 @@ Last updated: 2026-10-03
 | [2026-10-03-r4-rental-nc-extension-mppu-fee-sheets.md](2026-10-03-r4-rental-nc-extension-mppu-fee-sheets.md) | Three NC Cooperative Extension county centers publish MPU rental terms (pages updated Jun-Sep 2026). Stokes charges $75 for up to 4 days; Orange/Durham $50 per 3-day or $75 per 5-day (card only); Rowan $25/day with a 3-day minimum ($75), cash/check, and… | equipment-rental, mppu, poultry, extension, rental-fees, north-carolina | 2026-10-03 |
 | [2026-10-03-r4-rentins-insureon-consultant-premiums.md](2026-10-03-r4-rentins-insureon-consultant-premiums.md) | Insureon (an online broker; page modified 2026-06-30) reports median premiums for consulting businesses that bought policies through it. General liability: $32/mo, with annual range ~$250 to >$1,400; typical policy $1M per occurrence / $2M aggregate,… | insurance-premiums, professional-liability, errors-and-omissions, general-liability, consulting, education-consulting | 2026-10-03 |
 | [2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md](2026-10-03-r4-zoning-frederick-county-article-vi-use-lists.md) | Frederick County's business and industrial districts classify uses by NAICS, and the Zoning Administrator decides the classification. 'Animal Slaughtering and Processing' is allowed by right only in M2 (Industrial General): 'Food Manufacturing including… | zoning, frederick-county, article-vi, b2, b3, tm | 2026-10-03 |
+| [2026-10-03-r5-tiers-gores-meats-frederick-shenandoah-price-tiers.md](2026-10-03-r5-tiers-gores-meats-frederick-shenandoah-price-tiers.md) | Gore's Processing (Stephens City, Frederick Co., 'State inspected, not for re-sale'; Edinburg, 'Federally inspected'). 2026 web prices: $100 beef slaughter + $1.05/lb hanging to cut, vac or paper wrap; resale weigh and label $1.25/lb + $20 rendering; over 30 months +$50; dry age past 21 days 'discuss at booking'. Jan 1, 2023 sheets: $75 kill, $105 kill & age…  | processor-prices, tiered-pricing, a-la-carte, kill-fee, storage-fee, frederick-county | 2026-10-03 |
 
 ## Recent Changes
 
+- 2026-10-03: Research round 5 (price tiers) ingested 1 source(s).
 - 2026-10-03: Research round 4 ingested 5 source(s) (zoning, rental, storage, rental insurance, participation boundary, education).
 - 2026-10-02: Research round 3 ingested 7 source(s).
 - 2026-10-02: Research round 2 ingested 5 source(s).

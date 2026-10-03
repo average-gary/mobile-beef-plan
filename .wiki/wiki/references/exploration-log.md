@@ -7,13 +7,15 @@ sources:
   - raw/articles/2026-10-03-r4-participation-vermont-6vsa-3311a-personal-slaughter.md
   - raw/articles/2026-10-03-r4-rental-nmpan-mobile-units-in-operation.md
   - raw/data/2026-10-03-r4-education-farmstead-meatsmith-harvest-class-prices.md
+  - raw/data/2026-10-03-r5-tiers-gores-meats-frederick-shenandoah-price-tiers.md
+  - raw/articles/2026-10-03-r5-tiers-nmpan-spring-hill-tangletown-vt-mppu-operator-model.md
 created: 2026-10-03
 updated: 2026-10-03
 tags: [exploration-log, decision-log, iterations, business-model, options]
 aliases: ["iteration log", "decision log"]
 confidence: high
 volatility: hot
-summary: "Dated, numbered record of each question explored and what it changed: three research rounds on 2026-10-02 (landscape, gaps, cooler-backed model) and four iterations on 2026-10-03 that together make up research round 4 (Frederick County commercial/industrial zoning; cutting back on the farm; rental plus storage; rental plus education). Each entry links to the option page it produced."
+summary: "Dated, numbered record of each question explored and what it changed: three research rounds on 2026-10-02 (landscape, gaps, cooler-backed model) and four iterations on 2026-10-03 that together make up research round 4 (Frederick County commercial/industrial zoning; cutting back on the farm; rental plus storage; rental plus education), and research round 5 (price tiers combining the options). Each entry links to the option page it produced."
 ---
 
 # Exploration Log
@@ -70,6 +72,21 @@ summary: "Dated, numbered record of each question explored and what it changed: 
 - **Short answer:** every text found turns on **who performs** the slaughter or cutting, not on payment. Classroom and planning advice are very likely fine; hands-off coaching at a renter's kill is a gray zone (by analogy to Vermont, likely not "assisting" [inferred]; VDACS undefined); any hands-on act by staff makes the company a custom operator. Hold the free Custom Permit as a safe harbor. Benchmarks: $675-775 per student for a one-day hands-on harvest class (Farmstead Meatsmith 2026), $150 online courses (NMPAN 2025; MPA's is USDA-subsidized) and about $150/hr as MPA's implied value of bundled coaching (2025) [inferred], $75 renter certification (Kentucky 2013). Education adds about $35-45k/yr [placeholder]: a demand test and safety gate, not a debt carrier.
 - **What changed:** new candidate Option E, the options hub, this log; 8 questions for VDACS OMPS.
 - **Links:** [[option-e-rental-plus-education|Option E]] ([Option E](../options/option-e-rental-plus-education.md)).
+
+## 8. 2026-10-03 (round 5): Combine the options into price tiers
+
+- **Question** (*verbatim*): "there's likely some combination of offering as well that could be part of the price tiering. consider that in the final pass"
+- **Short answer:** three tiers on the same unit and cooler, with add-ons: T1 Rent (Option D), T2 Coached (Option E, advise only) and T3 Full service (Option B, company Custom Permit). A tier is a legal configuration as well as a price. Hands-on staff work turns a T1 or T2 job into a custom-exempt job with the company as operator. Storing personal-use carcasses and verbal coaching at the kill need VDACS answers. Cutting at a B3 storage cooler is a zoning conflict in every tier. Pro forma results:
+  - At default staffing, the 50/30/20 mix gives Y3 cash of $94,952 and break-even of 311 head with owner draw. Full service alone gives $129,507 and 274.
+  - With payroll matched to the labor check, the 50/30/20 mix gives $120,495 and 274.
+  - A DIY-heavy mix runs out of unit days (about 300 rental days at 375 head) before it runs out of staff hours [inferred].
+  - Hypothesis: T3 is the core, and T1/T2 are an off-season and overflow tier at about 20-30% of head.
+- **What changed:**
+  - New candidate Option F, with a tier table, add-on price sheet and bundle compatibility matrix.
+  - Calculator tier mix with three presets and a labor check (`site/proforma.js`, `site/assumptions.json`, tests).
+  - Two round-5 sources: the Gore's Meats price tiers (the Frederick County incumbent, 2023 and 2026) and the Spring Hill VT operator-run unit (2009).
+  - Gap still open: no U-cut facility or farm butchery co-op with published prices was found.
+- **Links:** [[option-f-tiered-offering|Option F]] ([Option F](../options/option-f-tiered-offering.md)).
 
 ## See Also
 

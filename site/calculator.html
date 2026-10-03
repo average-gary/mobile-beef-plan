@@ -39,6 +39,15 @@
   <h3>Sensitivity to cutting price (Year 3 staffing)</h3>
   <div class="table-wrap"><table id="sensitivity"></table></div>
 
+  <h3>Service tier mix</h3>
+  <p>Price tiers on the same unit and cooler. <strong>Full service</strong>: staff kill and cut under the company's Custom Permit (Option B). <strong>Coached</strong>: the owner does the work and the company advises only (Option E). <strong>Rent</strong>: unit plus cooler storage, owner does the work (Option D). Each tier is a legal configuration, not only a price: staff hands-on work on a Coached or Rent job makes it a custom-exempt job with the company as operator. Whether storing personal-use carcasses needs extra VDACS permits is an open question. Not legal advice.</p>
+  <p class="no-print">Presets: <a href="#tierMixFull=1&amp;tierMixCoached=0&amp;tierMixRental=0">Full service only (defaults)</a> · <a href="#tierMixFull=0.5&amp;tierMixCoached=0.3&amp;tierMixRental=0.2">Balanced 50/30/20</a> · <a href="#tierMixFull=0.2&amp;tierMixCoached=0.3&amp;tierMixRental=0.5">Rental-heavy 20/30/50</a></p>
+  <div class="table-wrap"><table id="tiers"></table></div>
+  <h4>Labor check</h4>
+  <p id="labor-warning" class="error" role="alert" hidden></p>
+  <div class="table-wrap"><table id="labor"></table></div>
+  <p class="muted">Staff hours per head by tier times head, against employee hours plus 2,500 unpaid owner hours. Payroll still follows the employee hours entered by year, so a Rent-heavy mix with default hours carries more payroll than it needs.</p>
+
   <h2>Assumptions</h2>
   <form id="form" novalidate>
     <fieldset>

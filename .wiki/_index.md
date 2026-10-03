@@ -6,10 +6,10 @@ Last updated: 2026-10-03
 
 ## Statistics
 
-- Sources: 91 raw documents (61 articles, 8 papers, 22 data)
-- Articles: 22 compiled wiki articles (8 concepts, 5 topics, 5 options, 4 references)
+- Sources: 93 raw documents (62 articles, 8 papers, 23 data)
+- Articles: 23 compiled wiki articles (8 concepts, 5 topics, 6 options, 4 references)
 - Outputs: 1 generated artifact (business plan, Markdown + PDF)
-- Research rounds: 4
+- Research rounds: 5
 - Last compiled: 2026-10-03
 - Last lint: never
 
@@ -18,7 +18,7 @@ Last updated: 2026-10-03
 - **Start here: [Mobile Beef Processing Business Plan](wiki/topics/mobile-beef-business-plan.md)**
 - **Business plan PDF: [output/business-plan-mobile-beef-2026-10-02.pdf](output/business-plan-mobile-beef-2026-10-02.pdf)**
 - **Operating model: [Cooler-Backed Mobile Model](wiki/topics/cooler-backed-mobile-model.md)**
-- **Options explored: [Business Model Options](wiki/topics/business-model-options.md)** (A-E compared; [Exploration Log](wiki/references/exploration-log.md))
+- **Options explored: [Business Model Options](wiki/topics/business-model-options.md)** (A-F compared; [Exploration Log](wiki/references/exploration-log.md))
 - **Funding: [Grant and Financing Opportunities](wiki/topics/grant-and-financing-opportunities.md)**
 - [All Sources](raw/_index.md)
 - [All Articles](wiki/_index.md)
@@ -69,6 +69,16 @@ side. Every number carries its regulatory model and year.
 - **No red-meat DIY rental precedent** in NMPAN's directory (c. 2012-2015); all rental programs it lists are poultry ($25-150/day). Virginia voids pre-injury
   personal-injury waivers (*Hiett*, 1992), so insurance carries rental and workshop risk.
 
+## Key Findings: price tiers (round 5)
+
+- **[Option F](wiki/options/option-f-tiered-offering.md)** combines the options into tiers on one unit and cooler: T1 Rent (D),
+  T2 Coached (E, advise only), T3 Full service (B), plus add-ons (aging, storage, SRM, offal haul-off, mileage, supplies, delivery).
+- **A tier is a legal configuration:** staff hands-on work on a T1/T2 job makes it custom-exempt with the company as operator.
+  Personal-use carcass storage and on-site coaching need VDACS answers. No tier may cut at a B3 storage cooler.
+- **Economics (calculator tier mix):** at default staffing the 50/30/20 mix lowers Y3 cash to $94,952 and lifts break-even with draw to
+  311 head; with payroll matched to labor it gives $120,495 and 274 head. DIY tiers hit the unit calendar first [inferred].
+- **Gore's Meats** (Frederick County incumbent) price list found: $100 kill + $1.05/lb (2026); a $105 kill-and-age tier in 2023.
+
 ## Open Questions
 
 1. Frederick County use determination / CUP for the cooler and dock; Shenandoah, Clarke and Page comparison.
@@ -83,6 +93,7 @@ side. Every number carries its regulatory model and year.
 
 ## Recent Changes
 
+- 2026-10-03: Research round 5 (price tiers, 2 sources): new Option F tiered offering (Rent, Coached, Full service + add-ons, bundle compatibility matrix), calculator tier mix with presets and labor check, Exploration Log entry 8.
 - 2026-10-03: Options iteration (round 4, 20 sources): new `options` category with Options A-E, Business Model Options hub, Exploration Log. New Option E answers "What if we advised/consulted/educated people that were renting?" Zoning corrected: a cooler with a cutting dock is by right only in M2, not on B2 commercial land.
 - 2026-10-02: Round 3 (4 gaps + cooler-backed model, 7 agents): 23 sources, 3 new articles, business plan rewritten around the chosen kill-and-cut mobile + hanging-cooler model, 7 articles updated.
 - 2026-10-02: Round 2: 30 sources, 4 new articles, business plan rewritten, 6 articles updated. Resolved: CIS (no), 2VAC5-210, on-farm disposal route, custom rig cost, Valley prices, bottleneck location.
