@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>90-day diligence tracker — Mobile Beef Plan</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="diligence.js"></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">Mobile Beef Plan</a><nav aria-label="Main"><a href="index.html">Overview</a><a href="calculator.html">Pro forma</a><a href="plan/">Business plan</a><a href="wiki/">Research</a><a href="diligence.html" aria-current="page">Diligence</a></nav></header>
+<main class="container">
+  <div class="notice"><strong>Research draft.</strong> Not legal, tax or financial advice. Calls, phone numbers and deadlines come from public sources dated October 2026; confirm each with the agency before relying on it.</div>
+  <h1>90-day diligence tracker</h1>
+  <p>The ten calls from the <a href="plan/">business plan</a> (Section 11), in order. Your progress, notes and dates are saved <strong>only in this browser</strong> (localStorage). Use Export to keep a copy or move it to another device.</p>
+
+  <p id="progress" role="status" aria-live="polite">Loading…</p>
+  <p class="no-print">
+    <button type="button" id="export">Export JSON</button>
+    <label for="import" style="display:inline">Import JSON</label>
+    <input type="file" id="import" accept="application/json,.json" style="width:auto">
+    <button type="button" class="secondary" id="clear">Clear all</button>
+  </p>
+  <noscript><p class="notice">This tracker needs JavaScript. The same call list is in the <a href="plan/">business plan</a>, Section 11.</p></noscript>
+
+  <h2>Calls</h2>
+  <ol id="calls" class="checklist"></ol>
+
+  <h2>Grant and funding deadlines</h2>
+  <p class="muted">Days remaining are counted from today's date on your device.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Date</th><th class="num">Days left</th><th>What</th><th>Notes</th></tr></thead>
+      <tbody id="deadlines"></tbody>
+    </table>
+  </div>
+</main>
+<footer class="site-footer">Research draft — not legal, tax or financial advice. Source: <a href="https://github.com/average-gary/mobile-beef-plan">github.com/average-gary/mobile-beef-plan</a></footer>
+</body>
+</html>

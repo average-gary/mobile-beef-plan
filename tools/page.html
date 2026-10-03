@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$if(pagetitle)$$pagetitle$$else$$title$$endif$ — Mobile Beef Plan</title>
+$if(summary)$
+  <meta name="description" content="$summary$">
+$endif$
+  <link rel="stylesheet" href="$root$style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="$root$index.html">Mobile Beef Plan</a><nav aria-label="Main"><a href="$root$index.html">Overview</a><a href="$root$calculator.html">Pro forma</a><a href="$root$plan/"$if(nav-plan)$ aria-current="page"$endif$>Business plan</a><a href="$root$wiki/"$if(nav-wiki)$ aria-current="page"$endif$>Research</a><a href="$root$diligence.html">Diligence</a></nav></header>
+<main class="container">
+<article>
+<div class="notice"><strong>Research draft.</strong> Not legal, tax or financial advice. Figures are dated to their sources; placeholder assumptions are flagged as such.</div>
+$if(titleblock)$
+<h1>$title$</h1>
+$if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+$if(date)$<p class="date">$date$</p>$endif$
+$if(pdf)$<p><a href="$pdf$">Download the PDF</a></p>$endif$
+$endif$
+$if(toc)$
+<nav class="toc" aria-label="Contents">
+<h2>Contents</h2>
+$table-of-contents$
+</nav>
+$endif$
+$body$
+</article>
+</main>
+<footer class="site-footer">Research draft — not legal, tax or financial advice. Source: <a href="https://github.com/average-gary/mobile-beef-plan">github.com/average-gary/mobile-beef-plan</a></footer>
+</body>
+</html>

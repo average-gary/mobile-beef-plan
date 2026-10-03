@@ -1,0 +1,162 @@
+/* Mobile Beef Plan — single site stylesheet. System fonts only, no external assets.
+   Classes for other builders:
+     .site-header (+ .brand, nav)  top bar with shared nav; nav a[aria-current="page"] = active
+     .site-footer                  footer disclaimer line
+     main.container                page body, max-width 1100px; pandoc output styles live here too
+     .notice                       amber research-draft banner (pandoc "::: notice" div uses it as-is)
+     .placeholder-badge            small amber inline tag: placeholder assumption
+     .sourced-badge                small green inline tag: sourced assumption
+     .grid-2                       two columns, stacks below 760px
+     .card                         bordered panel
+     .table-wrap                   wrapper that scrolls a wide table horizontally
+     table                         striped rows, olive header (applies to every table)
+     label / input / select        label above control; .field = one label+control group
+     .kpi (+ .kpi-value, .kpi-label)  big number with caption; .kpi.negative turns value red
+     .muted                        secondary grey text
+     button, button.secondary      olive primary / outline secondary
+     .checklist (ul) > li          checkbox rows; li.done strikes through
+     @media print                  hides nav/buttons, un-scrolls tables
+*/
+:root {
+  --olive-dark: #2f3d14;
+  --olive: #4a5d23;
+  --olive-light: #e8ecdc;
+  --bg: #faf7f0;
+  --surface: #fff;
+  --text: #2a2620;
+  --muted: #5f584c;
+  --border: #d9d1c1;
+  --amber-bg: #fdf1d6;
+  --amber: #8a5a00;
+  --red: #9b2c1c;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--olive); }
+a:hover { color: var(--olive-dark); }
+:focus-visible { outline: 3px solid #8a5a00; outline-offset: 2px; }
+.site-header :focus-visible { outline-color: #d9c27a; }
+
+/* Header / nav */
+.site-header {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.5rem;
+  padding: .75rem 1rem; background: var(--olive-dark); color: #fff;
+}
+.site-header a { color: #fff; text-decoration: none; }
+.site-header .brand { font-weight: 700; font-size: 1.1rem; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+.site-header nav a { padding: .25rem 0; border-bottom: 2px solid transparent; }
+.site-header nav a:hover, .site-header nav a[aria-current="page"] { border-bottom-color: #d9c27a; }
+
+.site-footer {
+  margin-top: 3rem; padding: 1.5rem 1rem; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .875rem; text-align: center;
+}
+
+main.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+/* Typography (also pandoc reader output) */
+h1, h2, h3 { color: var(--olive-dark); line-height: 1.25; margin: 1.6em 0 .5em; }
+h1 { font-size: 2rem; margin-top: .5em; }
+h2 { font-size: 1.5rem; padding-bottom: .2em; border-bottom: 1px solid var(--border); }
+h3 { font-size: 1.2rem; }
+p, ul, ol { margin: 0 0 1em; }
+li + li { margin-top: .25em; }
+img { max-width: 100%; height: auto; }
+blockquote {
+  margin: 1em 0; padding: .5em 1em; border-left: 4px solid var(--olive);
+  background: var(--olive-light); color: var(--text);
+}
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+code { background: #efe9dc; padding: .1em .3em; border-radius: 3px; }
+pre { background: #efe9dc; padding: 1em; overflow-x: auto; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.muted { color: var(--muted); }
+
+/* Banners and badges */
+.notice {
+  margin: 1em 0 1.5em; padding: .75em 1em; background: var(--amber-bg);
+  border: 1px solid #e3c67f; border-left: 6px solid #c58a00; border-radius: 4px;
+}
+.notice > :last-child { margin-bottom: 0; }
+.placeholder-badge, .sourced-badge {
+  display: inline-block; padding: 0 .45em; border-radius: 999px; font-size: .75rem;
+  font-weight: 600; line-height: 1.6; vertical-align: middle; white-space: nowrap;
+}
+.placeholder-badge { background: var(--amber-bg); color: var(--amber); border: 1px solid #e3c67f; }
+.sourced-badge { background: var(--olive-light); color: var(--olive-dark); border: 1px solid #b9c49a; }
+
+/* Layout */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+@media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: 1rem 1.25rem; margin-bottom: 1rem;
+}
+.card > :first-child { margin-top: 0; }
+
+/* Tables (striped, olive header). Pandoc tables have no wrapper, so they scroll themselves on narrow screens. */
+.table-wrap { overflow-x: auto; margin: 1em 0; }
+.table-wrap table { margin: 0; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; background: var(--surface); font-size: .95rem; }
+th, td { padding: .45em .7em; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+thead th, thead td { background: var(--olive); color: #fff; font-weight: 600; }
+tbody tr:nth-child(even) { background: #f4f1e8; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+caption { caption-side: bottom; color: var(--muted); font-size: .875rem; padding-top: .4em; text-align: left; }
+@media (max-width: 760px) {
+  main.container > table, main.container article table { display: block; overflow-x: auto; }
+  th, td { padding: .4em .45em; }
+}
+
+/* Forms */
+label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .25rem; }
+.field { margin-bottom: 1rem; }
+input, select, textarea {
+  font: inherit; width: 100%; max-width: 20rem; padding: .4em .5em;
+  border: 1px solid #857c6b; border-radius: 4px; background: var(--surface); color: var(--text);
+}
+input[type="number"] { font-variant-numeric: tabular-nums; }
+input[type="checkbox"], input[type="radio"] { width: auto; accent-color: var(--olive); }
+button {
+  font: inherit; font-weight: 600; cursor: pointer; padding: .5em 1em; border-radius: 4px;
+  border: 1px solid var(--olive); background: var(--olive); color: #fff;
+}
+button:hover { background: var(--olive-dark); border-color: var(--olive-dark); }
+button.secondary { background: transparent; color: var(--olive-dark); }
+button.secondary:hover { background: var(--olive-light); }
+
+/* KPI */
+.kpi { padding: .75rem 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+.kpi-value { display: block; font-size: 2rem; font-weight: 700; color: var(--olive-dark); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.kpi-label { display: block; color: var(--muted); font-size: .875rem; }
+.kpi.negative .kpi-value { color: var(--red); }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li { display: flex; gap: .6rem; align-items: flex-start; padding: .5rem 0; border-bottom: 1px solid var(--border); margin: 0; }
+.checklist li input { margin-top: .35rem; flex: none; }
+.checklist li label { font-weight: 400; margin: 0; font-size: 1rem; }
+.checklist li.done label { text-decoration: line-through; color: var(--muted); }
+
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .site-header nav, button, .no-print { display: none !important; }
+  .site-header { background: none; color: #000; padding: 0 0 .5rem; }
+  .site-header a { color: #000; }
+  main.container { max-width: none; padding: 0; }
+  .table-wrap { overflow: visible !important; display: block !important; }
+  table { overflow: visible !important; display: table !important; }
+  table { font-size: 9pt; page-break-inside: auto; }
+  tr, .card, .kpi { page-break-inside: avoid; }
+  thead th { background: #ddd !important; color: #000 !important; }
+  a { color: #000; }
+  .notice { border-color: #000; background: none; }
+}

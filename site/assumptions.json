@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "asOf": "2026-10-02",
+  "groups": [
+    {
+      "id": "volume",
+      "title": "Volume & pricing",
+      "items": [
+        {"key": "hangingWeight", "label": "Hanging weight per head", "value": 750, "unit": "lb", "min": 500, "max": 1000, "step": 10, "status": "sourced", "source": "Worked example used throughout the wiki (750 lb hanging steer)", "year": 2026, "note": "Drives the per-pound cutting fee."},
+        {"key": "killFee", "label": "Harvest (farm-call kill) fee", "value": 125, "unit": "$/head", "min": 50, "max": 250, "step": 5, "status": "sourced", "source": "Backyard Butchery OK ($100-150); Beaverhead Meats MT ($75-125)", "year": 2025, "note": "Beaverhead figure is 2026."},
+        {"key": "mileagePerHead", "label": "Mileage charge (average)", "value": 30, "unit": "$/head", "min": 0, "max": 100, "step": 5, "status": "placeholder", "source": "Assumed average; Backyard Butchery charges $2.65/mile one way", "year": 2025, "note": "Depends on route density and head per farm visit."},
+        {"key": "cutPerLb", "label": "Cut, vac-pack, label", "value": 1.00, "unit": "$/lb hanging", "min": 0.5, "max": 1.5, "step": 0.05, "status": "sourced", "source": "Backyard Butchery ($0.90/lb); T&E ($1.05/lb)", "year": 2025, "note": "Price matters more than equipment cost (Section 8.2)."},
+        {"key": "extrasPerHead", "label": "Extras (aging, SRM, offal haul-off) average", "value": 25, "unit": "$/head", "min": 0, "max": 100, "step": 5, "status": "placeholder", "source": "Blended average; T&E $25/head/week aging, $50 over-30-month; Backyard Butchery $100 offal haul-off", "year": 2025, "note": "Mix of customers taking extras is assumed."}
+      ]
+    },
+    {
+      "id": "labor",
+      "title": "Labor",
+      "items": [
+        {"key": "wage", "label": "Employee wage", "value": 20.03, "unit": "$/hr", "min": 12, "max": 35, "step": 0.25, "status": "sourced", "source": "BLS OEWS, Virginia butchers and meat cutters mean wage", "year": 2025, "note": "May 2025 estimate. Owner is unpaid in the model."},
+        {"key": "payrollBurden", "label": "Payroll burden (taxes, benefits)", "value": 0.15, "unit": "fraction of wages", "min": 0, "max": 0.4, "step": 0.01, "status": "sourced", "source": "Processor business-plan templates (e.g. CISA 2013)", "year": 2013, "note": "Workers comp is modelled separately below."},
+        {"key": "wcRatePer100", "label": "Workers comp rate, NCCI 2081 Butchering", "value": 10.89, "unit": "$ per $100 payroll", "min": 2, "max": 20, "step": 0.1, "status": "placeholder", "source": "NMPAN, Iowa NCCI 2081 rate", "year": 2009, "note": "Iowa 2009 rate stands in for Virginia; get an agent quote."}
+      ]
+    },
+    {
+      "id": "opex",
+      "title": "Operating costs",
+      "items": [
+        {"key": "packagingPerHead", "label": "Packaging & supplies", "value": 50, "unit": "$/head", "min": 0, "max": 150, "step": 5, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Vac-seal bags, labels, boxes, knives, sanitizer."},
+        {"key": "renderingPerHead", "label": "Renderer, SRM, hides", "value": 25, "unit": "$/head", "min": 0, "max": 100, "step": 5, "status": "placeholder", "source": "Assumption (California ~$6/animal plus SRM and hides)", "year": 2026, "note": "Darling Ingredients fees and minimums are unknown."},
+        {"key": "fuelPerKillDay", "label": "Fuel & vehicle repair per harvest day", "value": 120, "unit": "$/day", "min": 0, "max": 400, "step": 10, "status": "placeholder", "source": "Derived from Nevada study ($230/day for 2 units)", "year": 2007, "note": "Old and out-of-region."},
+        {"key": "headPerKillDay", "label": "Head per harvest day", "value": 4, "unit": "head/day", "min": 1, "max": 10, "step": 1, "status": "placeholder", "source": "Assumption; harvest capacity is ~7 beef per person-day (NMPAN/Lorentz 2010)", "year": 2010, "note": "Sets the number of harvest days and so fuel cost."},
+        {"key": "coolerUtilities", "label": "Cooler utilities (power, water)", "value": 7200, "unit": "$/yr", "min": 0, "max": 30000, "step": 100, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "About $600/month."},
+        {"key": "sewerBase", "label": "Sewer base charge", "value": 600, "unit": "$/yr", "min": 0, "max": 3000, "step": 50, "status": "sourced", "source": "Frederick Water, $50.18/month base (3/4-in. meter)", "year": 2025, "note": "Rounded to $600/yr."},
+        {"key": "sewerGalPerHead", "label": "Wash water to sewer per head", "value": 150, "unit": "gal/head", "min": 0, "max": 1000, "step": 10, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Cooler-dock wash-down only; farm kills use an onboard tank."},
+        {"key": "sewerPer1000Gal", "label": "Sewer volume charge", "value": 11, "unit": "$ per 1,000 gal", "min": 0, "max": 30, "step": 0.5, "status": "sourced", "source": "Frederick Water, $7.03-11.06 per 1,000 gal", "year": 2025, "note": "Top of range. High-strength surcharge not modelled."},
+        {"key": "insuranceRevenueShare", "label": "Insurance (liability, auto, property)", "value": 0.042, "unit": "fraction of revenue", "min": 0, "max": 0.15, "step": 0.002, "status": "sourced", "source": "CISA MA cut-shop template ($9,600/yr on ~$226k revenue)", "year": 2013, "note": "Old and out-of-region; real numbers need agent quotes."},
+        {"key": "siteLease", "label": "Cooler site lease", "value": 18000, "unit": "$/yr", "min": 0, "max": 60000, "step": 500, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Land purchase not modelled."},
+        {"key": "professional", "label": "Accounting, legal, permit renewals", "value": 4000, "unit": "$/yr", "min": 0, "max": 20000, "step": 250, "status": "placeholder", "source": "Assumption", "year": 2026, "note": ""}
+      ]
+    },
+    {
+      "id": "capex",
+      "title": "Start-up capital",
+      "items": [
+        {"key": "capexUnit", "label": "Mobile kill-and-cut unit", "value": 300000, "unit": "$", "min": 70000, "max": 500000, "step": 5000, "status": "sourced", "source": "Sentinel 53 ft semi \"from\" list price", "year": 2026, "note": "Equipment options may be extra. Kill-only trailer + cut-room trailer is roughly $192k."},
+        {"key": "capexTow", "label": "Tow tractor, used", "value": 60000, "unit": "$", "min": 0, "max": 200000, "step": 5000, "status": "placeholder", "source": "Assumption; needs a quote", "year": 2026, "note": "Semi tractor (Class A CDL) or heavy pickup for a gooseneck."},
+        {"key": "capexCooler", "label": "Hanging cooler, ~400 sq ft + rail", "value": 60000, "unit": "$", "min": 5000, "max": 150000, "step": 5000, "status": "placeholder", "source": "Between CoolBot walk-ins (~$5,100/unit, 2026) and plant-standard ~$300/sq ft", "year": 2026, "note": ""},
+        {"key": "capexSewer", "label": "Sewer connection", "value": 6576, "unit": "$", "min": 0, "max": 50000, "step": 100, "status": "sourced", "source": "Frederick Water availability fee $3,076 + lateral $3,500", "year": 2019, "note": "2019-era fees; likely higher now."},
+        {"key": "capexWorkingCapital", "label": "Working capital & permits", "value": 45000, "unit": "$", "min": 0, "max": 150000, "step": 1000, "status": "placeholder", "source": "Assumption: CUP/engineering, permits, 2-3 months operating cash", "year": 2026, "note": "Not depreciated."}
+      ]
+    },
+    {
+      "id": "financing",
+      "title": "Financing",
+      "items": [
+        {"key": "debtFraction", "label": "Share of capital borrowed", "value": 0.8, "unit": "fraction", "min": 0, "max": 1, "step": 0.05, "status": "placeholder", "source": "Assumption (80% debt, 20% owner or member equity)", "year": 2026, "note": "Lender terms are a placeholder."},
+        {"key": "interestRate", "label": "Interest rate", "value": 0.085, "unit": "annual rate", "min": 0, "max": 0.2, "step": 0.0025, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Farm Credit / VSBFA terms not yet quoted."},
+        {"key": "termYears", "label": "Loan term", "value": 10, "unit": "years", "min": 1, "max": 30, "step": 1, "status": "placeholder", "source": "Assumption", "year": 2026, "note": ""},
+        {"key": "depreciationYears", "label": "Depreciation life (straight-line)", "value": 7, "unit": "years", "min": 1, "max": 20, "step": 1, "status": "placeholder", "source": "Assumption (7-year straight-line)", "year": 2026, "note": "Tax item only; excluded from cash."},
+        {"key": "ownerDraw", "label": "Owner pay target", "value": 50000, "unit": "$/yr", "min": 0, "max": 150000, "step": 1000, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Used for break-even with owner pay."}
+      ]
+    }
+  ],
+  "years": [
+    {"head": 200, "employeeHours": 2080},
+    {"head": 300, "employeeHours": 3080},
+    {"head": 375, "employeeHours": 3080}
+  ]
+}
