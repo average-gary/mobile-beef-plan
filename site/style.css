@@ -115,6 +115,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 table { border-collapse: collapse; width: 100%; margin: 1em 0; background: var(--surface); font-size: .95rem; }
 th, td { padding: .45em .7em; border: 1px solid var(--border); text-align: left; vertical-align: top; }
 thead th, thead td { background: var(--olive); color: #fff; font-weight: 600; }
+thead a { color: #fff; text-decoration: underline; }
+thead a:hover { color: #f3e7b8; }
+thead :focus-visible { outline-color: #d9c27a; }
 tbody tr:nth-child(even) { background: #f4f1e8; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 caption { caption-side: bottom; color: var(--muted); font-size: .875rem; padding-top: .4em; text-align: left; }
@@ -164,6 +167,7 @@ button.secondary:hover { background: var(--olive-light); }
   table { font-size: 9pt; page-break-inside: auto; }
   tr, .card, .kpi { page-break-inside: avoid; }
   thead th { background: #ddd !important; color: #000 !important; }
+  thead a { color: #000 !important; }
   a { color: #000; }
   .notice { border-color: #000; background: none; }
 }
