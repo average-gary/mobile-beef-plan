@@ -77,6 +77,14 @@
         {"key": "staffHoursRentalPerHead", "label": "Staff hours per head, Rent", "value": 1.5, "unit": "hours/head", "min": 0, "max": 20, "step": 0.5, "status": "placeholder", "source": "Assumption (cleaning, inspection, turnover)", "year": 2026, "note": ""},
         {"key": "renderingCoached", "label": "Company hauls offal on Coached jobs (1 = yes, 0 = no)", "value": 1, "unit": "0 or 1", "min": 0, "max": 1, "step": 1, "status": "placeholder", "source": "Assumption", "year": 2026, "note": "Packaging cost applies to Full service only; rendering to Full, and to Coached when this is 1. Rent: offal stays on the renter's farm."}
       ]
+    },
+    {
+      "id": "nostatic",
+      "title": "No static cooler (Option G)",
+      "items": [
+        {"key": "onboardSlots", "label": "Onboard cooler slots (0 = static cooler, check off)", "value": 0, "unit": "beef carcasses", "min": 0, "max": 24, "step": 1, "status": "sourced", "source": "Mobile Processing Trailers & Supply quote classes: gooseneck 4-8, 45 ft semi 9, modular 6-16", "year": 2026, "note": "Set above 0 for Option G3 (rolling onboard cooler). Also zero the cooler, sewer and site-lease inputs, or use the preset."},
+        {"key": "hangDays", "label": "Hang days per carcass (chill + aging)", "value": 14, "unit": "days", "min": 1, "max": 28, "step": 1, "status": "placeholder", "source": "Cooler-backed model: 7 days minimum, 14-21 common", "year": 2026, "note": "Only used when onboard slots are above 0."}
+      ]
     }
   ],
   "years": [

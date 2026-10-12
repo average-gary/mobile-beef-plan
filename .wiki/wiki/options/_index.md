@@ -4,7 +4,7 @@
 > [Business Model Options](../topics/business-model-options.md) hub; iteration history in the
 > [Exploration Log](../references/exploration-log.md).
 
-Last updated: 2026-10-03
+Last updated: 2026-10-12
 
 ## Contents
 
@@ -16,8 +16,10 @@ Last updated: 2026-10-03
 | [option-d-rental-plus-storage.md](option-d-rental-plus-storage.md) | candidate | Owners rent the mobile unit and do their own kill and cut under the personal-use exemption (9 CFR 303.1(a)(1)); the company stores carcasses in a storage-only cooler (B3 by right). It removes the cutter-labor ceiling and fits Frederick County's explicit farmer-family-use exception. But the core… | option, candidate, equipment-rental, personal-use-exemption, cold-storage, locker | 2026-10-03 |
 | [option-e-rental-plus-education.md](option-e-rental-plus-education.md) | candidate | Answers 'What if we advised/consulted/educated people that were renting?' Add a training and advice layer to Option D: a required certification course before first rental (the Kentucky and NC poultry-unit model), on-farm harvest workshops ($675-775 per hands-on student, Farmstead Meatsmith 2026),… | option, candidate, education, consulting, workshops, equipment-rental | 2026-10-03 |
 | [option-f-tiered-offering.md](option-f-tiered-offering.md) | candidate | Combines Options D, E and B into price tiers on the same mobile unit and cooler: T1 Rent (unit + cooler storage, owner does the work), T2 Coached (T1 plus advice, staff stay on the advise side of the line), T3 Full service (staff kill and cut under the company's free Custom… | option, candidate, price-tiers, bundling, add-ons, equipment-rental | 2026-10-03 |
+| [option-g-no-static-site.md](option-g-no-static-site.md) | candidate | No company cooler: carcasses hang in the unit's onboard cooler. G1 park the unit at the farm (viable only with part-time labor and big batches), G2 drop reefer trailers at farms (unpriced), G3 rolling onboard cooler (best fit). Slots = head/wk × hang days ÷ 7: 8 slots give 400 head/yr at 7 days, 200 at 14 (below the ~240 break-even). Capex $405,000 vs $471,576… | option, candidate, no-static-site, onboard-cooler, rolling-inventory, drop-trailer | 2026-10-12 |
 
 ## Recent Changes
 
+- 2026-10-12: Option G (no static site: G1 park at farm, G2 drop coolers, G3 rolling onboard cooler) added as a candidate.
 - 2026-10-03: Option F (tiered offering: Rent, Coached, Full service plus add-ons) added as a candidate in research round 5.
 - 2026-10-03: Category created with Options A-E (A superseded, B chosen, C-E candidates; E is new this iteration).

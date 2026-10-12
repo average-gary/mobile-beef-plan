@@ -1,4 +1,4 @@
-import { flatten, projection, breakEvenHead, sensitivity, tierMix, tierRevenue, laborCheck } from './proforma.js';
+import { flatten, projection, breakEvenHead, sensitivity, tierMix, tierRevenue, laborCheck, slotCheck } from './proforma.js';
 
 const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 const int = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
@@ -158,6 +158,19 @@ function render() {
   const over = labor.map((l, i) => l.utilization > 1 ? 'Year ' + (i + 1) : null).filter(Boolean);
   $('labor-warning').hidden = !over.length;
   $('labor-warning').textContent = over.length ? `Labor over 100% in ${over.join(', ')}: the tier mix needs more staff hours than are available. Add employee hours or shift head toward Coached or Rent.` : '';
+
+  const slots = a.years.map((y) => slotCheck(a, y.head));
+  $('slot-section').hidden = !slots[0];
+  if (slots[0]) {
+    table($('slots'), ['', ...years.map((_, i) => 'Year ' + (i + 1))], [
+      ['Carcasses on the rail (steady state)', ...slots.map((c) => c.onRail.toFixed(1))],
+      ['Onboard cooler slots', ...slots.map((c) => String(c.slots))],
+      ['Utilization', ...slots.map((c) => pct(c.utilization))],
+    ]);
+    const full = slots.map((c, i) => c.utilization > 1 ? 'Year ' + (i + 1) : null).filter(Boolean);
+    $('slot-warning').hidden = !full.length;
+    $('slot-warning').textContent = full.length ? `Onboard cooler over 100% in ${full.join(', ')}: ${a.onboardSlots} slots at ${a.hangDays} hang days hold at most ${int.format(slots[0].maxHead)} head a year. Add slots, shorten the hang, or cut head.` : '';
+  }
 }
 
 function loadHash() {

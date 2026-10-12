@@ -71,6 +71,12 @@ summary: "Of six documented inspected-MSU projects, one was never built (Nevada)
 9. **Literature corroboration (round 2).** ERR-150 says MSUs may cost more per head than a fixed plant, and that PSMPC's use came in well below its feasibility studies. It notes some FSIS districts don't follow the guidance allowing outdoor kill and bleed-out. A 2023 Missouri survey ranks **labor** as the top processor concern (3.98/5), with financing last (1.56/5). New England work found **year-round animal supply** was the biggest problem, and **committed slaughter dates** were the documented fix for no-shows ([ERR-150](../../raw/papers/2026-10-02-r2-lit-ers-err150-local-meat-processing-commitments.md), [Missouri](../../raw/papers/2026-10-02-r2-lit-syukron-su-2023-missouri-small-processors.md), [Gwin & Thiboumery](../../raw/papers/2026-10-02-r2-lit-gwin-thiboumery-2014-institutional-entrepreneurship.md)).
 10. **Subsidized competition.** In Oregon, fixed plants were expanding with "significant federal
    funding" at the same time Rusted Gate was planning.
+11. **Working capital, not equipment (round 6).** Consultant Keith DeHaan reviewed 35 new
+   processing ventures (fixed plants). More than half never raised the capital, and only 5 were running
+   successfully. The top cause of failure was running out of operating capital. Central Dakota Beef failed twice on thin
+   working capital ([NMPAN 2011](../../raw/articles/2026-10-12-r6-contra-nmpan-to-build-or-not-startup-failure-rate.md)).
+   Grant reimbursements can also stall: in 2025, USDA froze reimbursements on already-awarded processor grants
+   ([NMPAN 2025](../../raw/articles/2026-10-12-r6-contra-nmpan-grant-freeze-reimbursement-trap.md)). See [[grant-and-financing-opportunities|Grant and Financing Opportunities]] ([Grant and Financing Opportunities](../topics/grant-and-financing-opportunities.md)).
 
 ## Inverted: what the survivors had
 

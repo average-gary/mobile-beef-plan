@@ -48,6 +48,14 @@
   <div class="table-wrap"><table id="labor"></table></div>
   <p class="muted">Staff hours per head by tier times head, against employee hours plus 2,500 unpaid owner hours. Payroll still follows the employee hours entered by year, so a Rent-heavy mix with default hours carries more payroll than it needs.</p>
 
+  <h3>No static cooler (Option G)</h3>
+  <p class="no-print">Presets: <a href="#capexCooler=0&amp;capexSewer=0&amp;siteLease=0&amp;sewerBase=0&amp;sewerGalPerHead=0&amp;onboardSlots=8&amp;hangDays=7">Rolling onboard cooler, 8 slots, 7-day hang</a> · <a href="#capexCooler=0&amp;capexSewer=0&amp;siteLease=0&amp;sewerBase=0&amp;sewerGalPerHead=0&amp;onboardSlots=8&amp;hangDays=14">8 slots, 14-day hang</a>. The presets drop the cooler, sewer and site lease but keep the $300k unit price; a 12-16 slot unit is quote-only, and 24/7 generator fuel, a separate chill compartment and delivery trips are not modelled.</p>
+  <div id="slot-section" hidden>
+    <p id="slot-warning" class="error" role="alert" hidden></p>
+    <div class="table-wrap"><table id="slots"></table></div>
+    <p class="muted">Carcasses on the rail = head per week (50-week season) × hang days ÷ 7.</p>
+  </div>
+
   <h2>Assumptions</h2>
   <form id="form" novalidate>
     <fieldset>

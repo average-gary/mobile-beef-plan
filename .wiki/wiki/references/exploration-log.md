@@ -10,7 +10,7 @@ sources:
   - raw/data/2026-10-03-r5-tiers-gores-meats-frederick-shenandoah-price-tiers.md
   - raw/articles/2026-10-03-r5-tiers-nmpan-spring-hill-tangletown-vt-mppu-operator-model.md
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-12
 tags: [exploration-log, decision-log, iterations, business-model, options]
 aliases: ["iteration log", "decision log"]
 confidence: high
@@ -87,6 +87,24 @@ summary: "Dated, numbered record of each question explored and what it changed: 
   - Two round-5 sources: the Gore's Meats price tiers (the Frederick County incumbent, 2023 and 2026) and the Spring Hill VT operator-run unit (2009).
   - Gap still open: no U-cut facility or farm butchery co-op with published prices was found.
 - **Links:** [[option-f-tiered-offering|Option F]] ([Option F](../options/option-f-tiered-offering.md)).
+
+## 9. 2026-10-12: No cooler at a static site
+
+- **Questions** (*verbatim*): "what if we limit it to no cooler at a static site. how does that limit the mobile business?", then "we could just leave the mobile unit at the farm during the hanging?", then "could we travel around with hanging beef to fill the cooler and sort of rotate like that?"
+- **Short answer:** the static cooler buys aging time. Without it, onboard cooler slots become the ceiling: slots = head/week × hang days ÷ 7 [inferred]. Parking the unit at the farm (G1) ties it up for the whole hang and leaves the crew idle, at about 3-5 head/week, so it is ruled out. Dropping reefer trailers at farms (G2) keeps the crew busy but needs about 8 coolers out at once, at prices not yet found. A rolling onboard cooler (G3) works at a 7-day hang on an 8-9 slot unit (about 6-8 head/week). At a 14-day hang it is capped at 200 head/yr, below the roughly 240-head break-even without a cooler site. Start-up capital drops from $471,576 to $405,000, but the unit price is unchanged and G3 needs a bigger unit. It also loses long aging and the AFID/REAP-fundable cooler, and moves cutting wash water to farms.
+- **What changed:**
+  - New candidate Option G.
+  - Option G column in the hub.
+  - Calculator: onboard-slot check (`slotCheck`, 2 new assumptions, 1 test) and two no-cooler presets.
+  - No new sources.
+- **Links:** [[option-g-no-static-site|Option G]] ([Option G](../options/option-g-no-static-site.md)).
+
+## 10. 2026-10-12: Part-time labor makes "at the farm" workable?
+
+- **Question** (*verbatim*): "let's not assume full time employment. what about part time or half-time engagement for this? that would make the 'at the farm' a bit more doable?"
+- **Short answer:** yes, for big batches only. With labor paid by the hour, G1's idle cost becomes the unit's ~$48k/yr debt service, not the crew. One parked unit turns about 73-219 head/yr at a 7-day hang (2-8 head per farm) [inferred]. Break-even is about 107 head with a $300k unit, 86 with $200k. 5-8 head per farm clears it; 2-3 head per farm and 14-day hangs don't. Catches: part-time butchers are hard to recruit (failure mode 3), GI Bill OJT needs full-time training, and WOTC is reduced below 400 h (and lapsed).
+- **What changed:** Option G gains a "Part-time labor: G1 revisited" section (turnover and break-even tables, catches, batch minimum, G1 + G3 hybrid); verdict and open questions updated.
+- **Links:** [[option-g-no-static-site|Option G]] ([Option G](../options/option-g-no-static-site.md)).
 
 ## See Also
 

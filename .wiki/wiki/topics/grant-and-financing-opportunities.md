@@ -18,9 +18,15 @@ sources:
   - raw/articles/2026-10-02-r2-lending-vsbfa-loan-and-credit-support-programs.md
   - raw/articles/2026-10-02-r3-vastudy-vdacs-rd894-five-year-meat-capacity-plan.md
   - raw/articles/2026-10-02-r3-vastudy-fauquier-livestock-exchange-abattoir-afid.md
+  - raw/articles/2026-10-12-r6-news-mppep-phase3-round2-catfish-nofo-and-icr.md
+  - raw/articles/2026-10-12-r6-contra-nmpan-grant-freeze-reimbursement-trap.md
+  - raw/articles/2026-10-12-r6-contra-nmpan-to-build-or-not-startup-failure-rate.md
+  - raw/articles/2026-10-12-r6-contra-nmpan-finding-capital-programs-that-work.md
+  - raw/articles/2026-10-12-r6-contra-sba-no-startup-grants.md
+  - raw/articles/2026-10-12-r6-sba-7a-fees-fy2026-veteran-express-waiver.md
 created: 2026-10-02
-updated: 2026-10-02
-tags: [grants, financing, afid, go-virginia, nsvrc, sare, reap, lfpp, vapg, mppep, rmap, rbdg, farm-credit, fsa, vsbfa, ssbci, cooperative, deadlines]
+updated: 2026-10-12
+tags: [grants, veteran, redlg, reimbursement-risk, financing, afid, go-virginia, nsvrc, sare, reap, lfpp, vapg, mppep, rmap, rbdg, farm-credit, fsa, vsbfa, ssbci, cooperative, deadlines]
 aliases: ["grants", "funding", "financing stack"]
 confidence: medium
 volatility: hot
@@ -36,7 +42,18 @@ summary: "No grant program found pays a for-profit mobile slaughter startup dire
 > ([VAFAIRS](../../raw/articles/2026-10-02-r2-stgrant-va-financing-guide-vafairs-private-funders.md))
 >
 > Grants do matter for three things: a **feasibility study** paid for by a locality,
-> **gap equipment** (≤$50k), and **expansion after year 1**. All program status is as of 2026-10-02.
+> **gap equipment** (≤$50k), and **expansion after year 1**. All program status is as of 2026-10-02, with the round-6 update below as of 2026-10-12.
+>
+> **Veteran owner?** See [[veteran-funding-mechanisms|Veteran Funding Mechanisms]] ([Veteran Funding Mechanisms](veteran-funding-mechanisms.md)). In short: priority points and fee waivers, not grant money for the rig. The exception is VR&E Chapter 31 for a service-disabled owner, which still bars vehicles and buildings.
+
+## Round-6 update (2026-10-12)
+
+- **No new or reopened money for beef.** The only open USDA meat-processing grant is **MPPEP Phase 3 Round 2, for invasive wild-caught catfish only** (Sep 8 – Dec 7, 2026; $6M; $50k–$2M; 20% cost share). It requires a Federal Grant of Inspection, and it awards no veteran points. A May 21, 2026 notice extending MPPEP's forms suggests the program continues, but no FY2027 beef notice is posted ([MPPEP](../../raw/articles/2026-10-12-r6-news-mppep-phase3-round2-catfish-nofo-and-icr.md)).
+- **Reimbursement risk is real.** After Jan 19, 2025, USDA froze reimbursements on grants it had already awarded, across MPIRG, MPPEP, VAPG, LFPP, REAP and others. Cases included a small custom-exempt operator with $100,000 of refrigeration upgrades and a processor needing $50,000 to pay equipment suppliers. NMPAN called this opinion, and how it was resolved was not found ([NMPAN freeze](../../raw/articles/2026-10-12-r6-contra-nmpan-grant-freeze-reimbursement-trap.md)). **Plan cash as if every reimbursement grant (AFID, REAP, MPPEP) pays late.** Don't let a vendor deposit depend on it [inferred].
+- **Working capital is what kills startups, not equipment.** Of 35 new processing projects a consultant reviewed, more than half never raised capital, and **only 5 were running successfully**. The top cause was running out of operating capital ([NMPAN 2011](../../raw/articles/2026-10-12-r6-contra-nmpan-to-build-or-not-startup-failure-rate.md)). Grants pay for equipment and buildings, so finance working capital separately. See [[msu-failure-modes|Why Mobile Slaughter Units Fail]] ([Why Mobile Slaughter Units Fail](../concepts/msu-failure-modes.md)).
+- **One new loan tool: REDLG.** It is a 0%, 10-year loan through a rural electric or telephone co-op, up to $750k, typically covering only 5–17% of a project and never more than 50%. A new business can defer principal for up to 2 years. NMPAN lists it among only five programs that "work" for small processors, alongside local TIF and tax abatement, REAP and SBA 504 ([NMPAN capital](../../raw/articles/2026-10-12-r6-contra-nmpan-finding-capital-programs-that-work.md)). Ask the local electric co-op whether it holds REDLG funds and serves the cooler site [inferred: the co-op is unidentified].
+- **SBA fees.** The FY2026 manufacturer relief gave a 0% upfront fee on 7(a) loans ≤$950k for NAICS 31–33, and "custom slaughtering" is indexed at 311611. It **expired 10/1/26**, and no FY2027 notice was found. The permanent **$0 SBA Express fee for veteran-owned businesses** (≤$500k) still stands ([SBA fees](../../raw/articles/2026-10-12-r6-sba-7a-fees-fy2026-veteran-express-waiver.md)).
+- **"Grants for veterans" myth.** SBA: "SBA does not provide grants for starting and expanding a business" ([SBA](../../raw/articles/2026-10-12-r6-contra-sba-no-startup-grants.md)). Never pay for a grant list or an up-front fee.
 
 ## Deadlines on the calendar
 
@@ -52,6 +69,9 @@ summary: "No grant program found pays a for-profit mobile slaughter startup dire
 | ~Spring 2027 [inferred] | **LFPP** / RFSP | Agricultural businesses, co-ops, networks | Planning $25k–$100k; implementation $100k–$500k; 25% match |
 | Unverified | AFBF **Ag Innovation Challenge** | Startups | Up to $100k prize |
 | Paused, "expected to return in 2026" | VAFAIRS **Bull Pen** challenge | Virginia ag startups | ~$30k (2023 figure) |
+| Dec 7, 2026 | MPPEP Phase 3 Round 2 | **Catfish only**, federally inspected | Not applicable; listed to rule it out |
+| Late fall / early winter 2026 [inferred from past cycles] | **FVC Fellowship Fund** (veterans) | An operating farmer-veteran business | $1k–$5k paid to vendors; year 2 |
+| Quarterly | Warrior University → **Warrior Rising Business Showers** | Veterans, spouses, family | $2k–$150k pitch grants |
 
 ## Grants by route
 
@@ -158,6 +178,7 @@ primary source. Confirm with VSBFA (804-786-6585).
 
 ## See Also
 
+- [[veteran-funding-mechanisms|Veteran Funding Mechanisms]] ([Veteran Funding Mechanisms](veteran-funding-mechanisms.md))
 - [[shenandoah-market-and-funding|Shenandoah Valley Market and Funding]] ([Shenandoah Valley Market and Funding](shenandoah-market-and-funding.md))
 - [[mobile-beef-business-plan|Mobile Beef Processing Business Plan]] ([Mobile Beef Processing Business Plan](mobile-beef-business-plan.md))
 - [[custom-exempt-mobile-rig|Custom-Exempt Mobile Rig]] ([Custom-Exempt Mobile Rig](../concepts/custom-exempt-mobile-rig.md))

@@ -2,15 +2,15 @@
 
 > Business plan research for a mobile beef slaughter/processing operation in Virginia's Shenandoah Valley. Compares custom-exempt on-farm slaughter, USDA-inspected mobile slaughter units (MSUs), and state inspection. Covers capex, throughput, unit economics, regulatory path, waste disposal, market demand, grants and financing, and why mobile units fail.
 
-Last updated: 2026-10-03
+Last updated: 2026-10-12
 
 ## Statistics
 
-- Sources: 93 raw documents (62 articles, 8 papers, 23 data)
-- Articles: 23 compiled wiki articles (8 concepts, 5 topics, 6 options, 4 references)
+- Sources: 123 raw documents (92 articles, 8 papers, 23 data)
+- Articles: 25 compiled wiki articles (8 concepts, 6 topics, 7 options, 4 references)
 - Outputs: 1 generated artifact (business plan, Markdown + PDF)
-- Research rounds: 5
-- Last compiled: 2026-10-03
+- Research rounds: 6
+- Last compiled: 2026-10-12
 - Last lint: never
 
 ## Quick Navigation
@@ -18,8 +18,8 @@ Last updated: 2026-10-03
 - **Start here: [Mobile Beef Processing Business Plan](wiki/topics/mobile-beef-business-plan.md)**
 - **Business plan PDF: [output/business-plan-mobile-beef-2026-10-02.pdf](output/business-plan-mobile-beef-2026-10-02.pdf)**
 - **Operating model: [Cooler-Backed Mobile Model](wiki/topics/cooler-backed-mobile-model.md)**
-- **Options explored: [Business Model Options](wiki/topics/business-model-options.md)** (A-F compared; [Exploration Log](wiki/references/exploration-log.md))
-- **Funding: [Grant and Financing Opportunities](wiki/topics/grant-and-financing-opportunities.md)**
+- **Options explored: [Business Model Options](wiki/topics/business-model-options.md)** (A-G compared; [Exploration Log](wiki/references/exploration-log.md))
+- **Funding: [Grant and Financing Opportunities](wiki/topics/grant-and-financing-opportunities.md)** · [Veteran Funding Mechanisms](wiki/topics/veteran-funding-mechanisms.md)
 - [All Sources](raw/_index.md)
 - [All Articles](wiki/_index.md)
 - [Concepts](wiki/concepts/_index.md)
@@ -79,6 +79,22 @@ side. Every number carries its regulatory model and year.
   311 head; with payroll matched to labor it gives $120,495 and 274 head. DIY tiers hit the unit calendar first [inferred].
 - **Gore's Meats** (Frederick County incumbent) price list found: $100 kill + $1.05/lb (2026); a $105 kill-and-age tier in 2023.
 
+## Key Findings: no static site (Option G)
+
+- **The static cooler buys aging time.** Without it, onboard slots are the ceiling: slots = head/week × hang days ÷ 7. An 8-slot unit holds 400 head/yr at a 7-day hang, but only 200 at 14 days, below the ~240-head break-even without a cooler site.
+- **G3, a rolling onboard cooler, is the best variant:** it fits a 7-day-hang service at about 6-8 head/week. Parking the unit at the farm (G1) works only with part-time hourly labor and 5-8 head per farm at a 7-day hang (break-even about 107 head). Drop reefer trailers (G2) are unpriced.
+- **Trade:** start-up capital $405,000 vs $471,576 and no M2/CUP site or sewer. The costs: long aging, the AFID/REAP cooler fit, and cutting wash water on every farm.
+
+## Key Findings: veteran funding (round 6)
+
+- **Veteran status brings points, fee waivers and coaching, not grant money for the rig.** SBA: "SBA does not provide grants for starting and expanding a business."
+- **Direct money is small:** FVC Fellowship $1k–$5k paid to vendors (operating businesses only); Warrior Rising $2k–$150k pitch grants (veterans, spouses, family); V3 $1,000 per veteran hired (DVS; current funding unverified).
+- **Loan side:** the permanent **$0 SBA Express upfront fee** for veteran-owned businesses (≤$500k); **B&I +5 veteran points**. The FY2026 SBA manufacturer relief (0% on 7(a) ≤$950k; "custom slaughtering" is NAICS 311611) expired 10/1/26.
+- **VR&E Chapter 31** is the largest conditional source, for a service-disabled owner only. Equipment and fixtures are covered for the "most severely" disabled; land, buildings and "trucks ... or other means of transportation" are barred, so the rig is likely out.
+- **No veteran exception** to FSA's non-eligible-enterprise bar. FSA microloans, down-payment loans and EQIP's +25% rate help only the owner's own farm.
+- **Hiring:** GI Bill OJT pays a veteran apprentice cutter's housing allowance; WOTC lapsed for hires after 12/31/2025.
+- **Risk:** the 2025 USDA reimbursement freeze hit already-awarded processor grants; only 5 of 35 new processing ventures in an NMPAN review succeeded, and working capital was the top killer.
+
 ## Open Questions
 
 1. Frederick County use determination / CUP for the cooler and dock; Shenandoah, Clarke and Page comparison.
@@ -90,9 +106,12 @@ side. Every number carries its regulatory model and year.
 7. Virginia insurance premiums (NCCI 2081, liability, spoilage, bailee; hands-on workshop GL; rental inland marine).
 8. VDACS OMPS: what counts as "participating" for an adviser or instructor at a renter's kill; Handlers Permit for a cooler holding owner-held carcasses.
 9. Zoning Administrator: does § 165-204.17 apply in M2; is a fee-based carcass cooler "Warehousing and Storage" (B3).
+10. Owner veteran status and VA disability rating; VR&E Officer ruling on a towed trailer as "transportation"; FY2027 7(a) fees and NAICS coding (311611 vs 115210).
 
 ## Recent Changes
 
+- 2026-10-12: Options iteration 9: new Option G (no static site: park at farm, drop coolers, rolling onboard cooler); calculator slot check and no-cooler presets; Exploration Log entry 9.
+- 2026-10-12: Research round 6 (grants and veteran small-business funding, 30 sources, 5 agents): new topic Veteran Funding Mechanisms; grant article updated (MPPEP catfish-only, reimbursement-freeze risk, REDLG, SBA fee status); failure mode 11 (working capital).
 - 2026-10-03: Research round 5 (price tiers, 2 sources): new Option F tiered offering (Rent, Coached, Full service + add-ons, bundle compatibility matrix), calculator tier mix with presets and labor check, Exploration Log entry 8.
 - 2026-10-03: Options iteration (round 4, 20 sources): new `options` category with Options A-E, Business Model Options hub, Exploration Log. New Option E answers "What if we advised/consulted/educated people that were renting?" Zoning corrected: a cooler with a cutting dock is by right only in M2, not on B2 commercial land.
 - 2026-10-02: Round 3 (4 gaps + cooler-backed model, 7 agents): 23 sources, 3 new articles, business plan rewritten around the chosen kill-and-cut mobile + hanging-cooler model, 7 articles updated.

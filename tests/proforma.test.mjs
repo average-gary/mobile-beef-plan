@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { computeYear, projection, breakEvenHead, sensitivity, flatten, laborCheck, tierRevenue } from '../site/proforma.js';
+import { computeYear, projection, breakEvenHead, sensitivity, flatten, laborCheck, tierRevenue, slotCheck } from '../site/proforma.js';
 
 const json = JSON.parse(readFileSync(new URL('../site/assumptions.json', import.meta.url)));
 const a = flatten(json);
@@ -13,7 +13,7 @@ test('every item has complete metadata', () => {
     assert.ok(['sourced', 'placeholder'].includes(it.status), it.key);
     assert.ok(it.min <= it.value && it.value <= it.max, `${it.key} in range`);
   }
-  assert.equal(Object.keys(a).length, 41); // 29 original keys + 11 service-tier keys + years
+  assert.equal(Object.keys(a).length, 43); // 29 original keys + 11 service-tier keys + 2 Option G keys + years
 });
 
 test('projection golden numbers', () => {
@@ -92,4 +92,18 @@ test('laborCheck math', () => {
   assert.ok(Math.abs(l.hoursNeeded - 2137.5) < 1e-9);
   assert.equal(l.hoursAvailable, 2080);
   assert.ok(l.utilization > 1);
+});
+
+test('Option G slot check, hand-checked', () => {
+  assert.equal(slotCheck(a, 375), null); // default onboardSlots = 0: static cooler, no check
+  // 375 head / 50 weeks = 7.5/week; x 14/7 = 15 on the rail vs 8 slots; max 8*7/14*50 = 200 head/yr
+  const c = slotCheck({ ...a, onboardSlots: 8, hangDays: 14 }, 375);
+  assert.equal(c.onRail, 15);
+  assert.equal(c.utilization, 1.875);
+  assert.equal(c.maxHead, 200);
+  assert.equal(slotCheck({ ...a, onboardSlots: 8, hangDays: 7 }, 375).maxHead, 400);
+  // No-cooler preset (unit price unchanged): capex 471,576 - 60,000 - 6,576 = 405,000
+  const g = { ...a, capexCooler: 0, capexSewer: 0, siteLease: 0, sewerBase: 0, sewerGalPerHead: 0 };
+  assert.equal(r(projection(g)[0].totalCapex), 405000);
+  assert.equal(breakEvenHead(g, 50000), 240);
 });

@@ -28,6 +28,14 @@ export function laborCheck(a, head, employeeHours, ownerHours = 2500) {
   return { hoursNeeded, hoursAvailable, utilization: hoursNeeded / hoursAvailable };
 }
 
+// Option G (no static cooler): carcasses hang in the unit's onboard cooler, so carcasses on the rail at steady state
+// = head/week x hang days / 7 (50-week season). onboardSlots = 0 means a static cooler (Options B-F): no check.
+export function slotCheck(a, head, seasonWeeks = 50) {
+  if (!a.onboardSlots) return null;
+  const onRail = head / seasonWeeks * a.hangDays / 7;
+  return { onRail, slots: a.onboardSlots, utilization: onRail / a.onboardSlots, maxHead: Math.floor(a.onboardSlots * 7 / a.hangDays * seasonWeeks) };
+}
+
 export function computeYear(a, head, employeeHours) {
   const m = tierMix(a), t = tierRevenue(a);
   const revenuePerHead = m.full * t.full + m.coached * t.coached + m.rental * t.rental;
